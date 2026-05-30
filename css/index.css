@@ -1,0 +1,134 @@
+body {
+
+    
+    font-family:'Inter', sans-serif;
+    -webkit-font-smoothing:antialiased;
+
+    /* Makes body fill the screen */
+    min-height: 100vh;
+
+    /* Fallback color for very old browsers */
+    background-color: rgb(5, 10, 42);
+    background: radial-gradient( 
+        #050a2a 100% 
+    );
+    color: #C7D0E0;
+}
+
+.hero {
+    
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+        font-size:clamp(30px,6vw,76px);
+        font-weight:800;
+        line-height:1.05;
+        letter-spacing:-.02em;
+        margin-bottom:24px;
+    }
+
+    .highlight{
+    background:
+    linear-gradient(
+        80deg,
+        #F4F8FF,
+        #8A7CFF,
+        #AAB4C8
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+
+    font-size:clamp(1.1rem,2vw,1.2rem);
+    line-height:1.7;
+    max-width:700px;
+    color:#C7D0E0;
+    margin-bottom:40px;
+    font-family:'Inter', sans-serif;
+}
+
+.CTA_buttons{
+    display:flex;
+    gap: 28px; 
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.btn{
+
+    padding:16px 32px;
+    background:#050a2a;
+    color:#F4F8FF;
+    text-decoration:none;
+    font-family:'inter', sans-serif;
+    border:1px solid #8A7CFF;
+    border-radius:8px;
+    transition:
+    box-shadow 0.2s ease;
+    
+}
+
+/* When mouse goes over      button */
+.btn:hover{
+    background:#8A7CFF;
+    color:#050a2a;
+}               
+
+.btn:focus{
+    outline:2px solid #B8D9F5;
+    outline-offset:1px;
+    box-shadow:
+    0 0 5px #8A7CFF,
+    0 0 15px #8A7CFF,
+    0 0 25px #8A7CFF;
+    transform:translateY(-2px);
+}
+
+.divider{
+    width:min(400px,60vw);
+    height: 2px;
+    margin-bottom: 30px;
+    position: relative;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #8A7CFF,
+        transparent
+    );
+
+    box-shadow:
+    0 0 10px #8A7CFF ; 
+}
+
+.divider::after{
+    content:"";
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#F4F8FF;
+
+    box-shadow:
+    0 0 10px #B8D9F5,
+    0 0 25px #8A7CFF;
+}
+
+

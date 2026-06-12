@@ -3,9 +3,10 @@ body {
 
     
     font-family:'Inter', sans-serif;
+
+    /* Safari/Chrome improvement */
     -webkit-font-smoothing:antialiased;
 
-    
     min-height: 100vh;
 
     /* Fallback color for old browsers */
@@ -150,3 +151,4 @@ body {
     }
 
 }
+

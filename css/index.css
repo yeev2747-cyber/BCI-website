@@ -1,20 +1,21 @@
+/* Golbal Style */
 body {
 
     
     font-family:'Inter', sans-serif;
     -webkit-font-smoothing:antialiased;
 
-    /* Makes body fill the screen */
+    
     min-height: 100vh;
 
-    /* Fallback color for very old browsers */
+    /* Fallback color for old browsers */
     background-color: rgb(5, 10, 42);
-    background: radial-gradient( 
-        #050a2a 100% 
-    );
+    
+    background:#050A2A;
     color: #C7D0E0;
 }
 
+/* Hero Section */
 .hero {
     
     min-height:100vh;
@@ -36,6 +37,7 @@ body {
         margin-bottom:24px;
     }
 
+    /* Highlight Text */
     .highlight{
     background:
     linear-gradient(
@@ -60,7 +62,8 @@ body {
     font-family:'Inter', sans-serif;
 }
 
-.CTA_buttons{
+/* Call-to-Action Button */
+.cta-buttons{
     display:flex;
     gap: 28px; 
     flex-wrap:wrap;
@@ -73,7 +76,7 @@ body {
     background:#050a2a;
     color:#F4F8FF;
     text-decoration:none;
-    font-family:'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     border:1px solid #8A7CFF;
     border-radius:8px;
     transition:
@@ -81,7 +84,6 @@ body {
     
 }
 
-/* When mouse goes over      button */
 .btn:hover{
     background:#8A7CFF;
     color:#050a2a;
@@ -97,6 +99,7 @@ body {
     transform:translateY(-2px);
 }
 
+/* Decorativee Divider */
 .divider{
     width:min(400px,60vw);
     height: 2px;
@@ -133,6 +136,7 @@ body {
     0 0 25px #8A7CFF;
 }
 
+/* Animations */
 @keyframes fadeIn {
 
     from {

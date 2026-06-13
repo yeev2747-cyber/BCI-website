@@ -14,20 +14,23 @@ body {
     
     background:#050A2A;
     color: #C7D0E0;
+
+    margin: 0;
+    padding: 0;
 }
 
+
 /* Hero Section */
-.hero {
-    
+.hero{
     min-height:100vh;
+
+    padding-top:40px;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
-    animation: fadeIn 1s ease-out;
-
 }
 
 .hero h1{
@@ -138,17 +141,140 @@ body {
 }
 
 /* Animations */
-@keyframes fadeIn {
 
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Nav Bar */
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
 
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:#050A2A;
+
+    border-bottom:1px solid rgba(138,124,255,0.15);
+
+    z-index:1000;
+}
+
+.nav-links{
+    list-style:none;
+
+    display:flex;
+    align-items:center;
+    gap:32px;
+
+    margin:0;
+    padding:0;
+}
+
+.nav-links li{
+    position:relative;
+}
+
+.nav-links a{
+    color:#C7D0E0;
+
+    text-decoration:none;
+
+    font-size:0.95rem;
+    font-weight:500;
+
+    padding:6px 0;
+
+    position:relative;
+
+    transition:color 0.3s ease;
+}
+
+.nav-links a:hover{
+    color:#F4F8FF;
+}
+
+.nav-links a::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+    height:2px;
+
+    background:#8A7CFF;
+
+    box-shadow:0 0 10px #8A7CFF;
+
+    transition:width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+    width:100%;
+}
+
+.nav-links a.active{
+    color:#F4F8FF;
+}
+
+.no-underline::after {
+    display: none !important;
+}
+
+.dropdown {
+    position: relative;
+}
+
+/* menu hidden by default */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 180px;
+    padding: 10px 0;
+    margin-top: 0;
+
+    background: #050A2A;
+    border: 1px solid rgba(138,124,255,0.2);
+    border-radius: 8px;
+
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+/* show on hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* links inside dropdown */
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #C7D0E0;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(138,124,255,0.1);
+    color: #F4F8FF;
 }
 

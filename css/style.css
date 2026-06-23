@@ -13,11 +13,141 @@
     --ice-white: #F4F8FF;
     --silver-gray: #AAB4C8;
 
+    --font-body: 'Inter', sans-serif;
+    --font-title: 'Space Grotesk', sans-serif;
 }
 
 body {
-
     background-color: var(--dark-blue);
     color: var(--ice-white);
+    padding-top: 120px;
+    font-family: var(--font-body);
+}
+
+
+
+/*NAVBAR*/
+
+
+.navbar {
+    padding: 15px 0;
+    background-color: var(--dark-blue);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.nav-link {
+    color: #F4F8FF !important;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--electric-cyan) !important;
+
+    transform: translateY(-2px);
+}
+
+/* Dropdown background */
+.dropdown-menu {
+    background-color: var(--dark-blue);
+    border: 1px solid var(--soft-violet);
+}
+
+/* Dropdown items */
+.dropdown-item {
+    color: var(--ice-white);
+    transition: 0.3s;
+}
+
+/* Hover effect (IMPORTANT for usability) */
+.dropdown-item:hover {
+    background-color: var(--soft-violet);
+    color: var(--dark-blue);
+    transform: translateX(5px);
+}
+
+.hero-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at top, #0A1F73, #050A2A);
+}
+
+/* Titles */
+.titles {
+    background: linear-gradient(90deg, #F4F8FF, #8A7CFF, #8FC2F2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+      font-family: var(--font-title);
+    
+}
+
+
+    /* Cards */
+    .quest-card{
+    background-color: #0A4174;
+
+    border: 1px solid var(--soft-violet);
+
+    color: var(--ice-white);
+
+    transition: 0.3s ease;
+}
+
+.quest-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow:
+    0 0 20px var(--electric-cyan);
+    display:flex;
+    flex-direction:column;
 
 }
+
+.quest-card .btn{
+    margin-top:auto;
+}
+.card-image{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+/* Video */
+
+
+    /* Footer */
+    footer {
+  background-color: var(--dark-blue);
+  color: var(--ice-white);
+}
+
+/* Facts carousel */
+.carousel-item {
+  min-height: 80px;
+}
+
+
+/* Carousel facts */
+#bciFacts .carousel-item p{
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+
+    
+}
+
+/* Contact */
+

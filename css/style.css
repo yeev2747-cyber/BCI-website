@@ -151,3 +151,6 @@ body {
 
 /* Contact */
 
+#feedback {
+    scroll-margin-top: 140px;
+}

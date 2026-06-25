@@ -20,3 +20,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+// Table of content
+
+window.addEventListener("scroll", () => {
+  let sections = document.querySelectorAll("section");
+  let links = document.querySelectorAll(".toc a");
+
+  sections.forEach(section => {
+    let top = window.scrollY;
+    let offset = section.offsetTop - 200;
+    let height = section.offsetHeight;
+
+    if (top >= offset && top < offset + height) {
+      links.forEach(link => link.classList.remove("active"));
+
+      let activeLink = document.querySelector(`.toc a[href="#${section.id}"]`);
+      if (activeLink) activeLink.classList.add("active");
+    }
+  });
+});

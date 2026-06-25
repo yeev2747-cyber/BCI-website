@@ -6,7 +6,7 @@
     --dark-blue: #050A2A;
     --steel-blue: #0A4174;
     --deep-teal: #0A6173;
-    --sky-blue: #8FC2F2;
+    --sky-blue: #575a5c;
     --electric-cyan: #00D1FF;
     --metallic-silver: #C7D0E0;
     --soft-violet: #8A7CFF;
@@ -25,10 +25,9 @@ body.index{
 }
 
 
-
 /*NAVBAR*/
 .navbar {
-    padding: 15px 0;
+    padding: 8px 0;
     background-color: var(--dark-blue);
     position: fixed;
     top: 0;
@@ -444,3 +443,27 @@ html{
 
     text-decoration: none;
 }
+
+/* Table */
+.table-responsive{
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #C7D0E0;
+    background-color: white;
+}
+
+/* Leave 140px space above them when scroll to these sections */
+#what-is-bci,
+#how-it-works,
+#components,
+#future,
+#types {
+    scroll-margin-top: 140px;
+}
+
+/* Table of Content */
+.toc a.active {
+    background-color: #0A6173;
+    color: white;
+}
+

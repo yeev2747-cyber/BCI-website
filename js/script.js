@@ -40,3 +40,22 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// Device Gallery
+document.querySelectorAll('.modal').forEach(modal => {
+
+    modal.addEventListener('hidden.bs.modal', function () {
+
+        const iframe = modal.querySelector('iframe');
+
+        if (iframe) {
+
+            const videoSrc = iframe.src;
+            iframe.src = "";
+            iframe.src = videoSrc;
+
+        }
+
+    });
+
+});

@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BCI Quest explores Brain-Computer Interfaces, innovations, applications, ethics and cybersecurity challenges."
+    />
+
+    <meta
+      name="keywords"
+      content="BCI, Brain Computer Interface, EEG, neuroscience, neural technology"
+    />
+    <meta name="author" content="Yeev" />
+
+    <title>BCI Quest</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Css Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/image/favicon.ico" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="light-page" id="top">
+    <!-- HEADER & NAVIGATION-->
+    <header>
+      <!-- Nav Bar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        aria-label="Main Navigation"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/image/logo.svg"
+              alt="BCI Quest Logo"
+              width="180"
+              height="90"
+            />
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <!-- HOME -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <!-- ABOUT BCIs DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-label="About BCIs submenu"
+                >
+                  About BCIs
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="intro.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="history.html">History</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- BCI TECHNOLOGY DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  BCI Technology
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="application.html"
+                      >Applications</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="healthcare.html"
+                      >Healthcare</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="device.html">Devices</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="innovations.html"
+                      >Innovations</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- RISKS & ETHICS DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Risks & Ethics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="risks.html">Risks</a></li>
+                  <li>
+                    <a class="dropdown-item" href="ethics.html">Ethics</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- QUIZ -->
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Quiz</a>
+              </li>
+
+              <!-- CONTACT -->
+              <li class="nav-item">
+                <a class="nav-link" href="#feedback">
+                  <i class="bi bi-telephone"></i> Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="page-content">
+      <!-- Breadcrumbs -->
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">BCI Technology</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Devices
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+    <div class="container py-5">
+      <div class="col-lg-8">
+        <h1 class="mt-3">Brain-Computer Interface Devices
+</h1>
+
+            <p class=" lead mb-4">
+               Explore the different types of Brain-Computer Interfaces, how they are placed, their advantages and limitations, and the technologies that make them possible.
+              </p>
+
+ <figure class="text-center mb-5 bg-white p-3 rounded">
+                <img
+                  src="assets/image/typeofbci.webp"
+                  alt="Types of (BCIs) by degree of invasiveness."
+                  class="img-fluid rounded shadow"
+                />
+                <!-- Figure 2 -->
+                <figcaption class="mt-1 fst-italic small">
+               Figure 2: Diagram illustrating the placement and categories of BCIs (non-invasive, minimal-invasive, and invasive).
+                </figcaption>
+              </figure>
+            </section>
+
+            <!-- BCI Gallery -->
+
+<!-- Non-Invasive-->
+
+<section class="device-gallery py-5">
+
+    <h1 class="text-center">
+        Explore BCI Devices
+    </h1>
+
+    <p class="sub-text">
+        Click on any device below to watch a short video explaining how it works.
+    </p>
+
+    <a href="#non-invasive" style="text-decoration: none;"> <h2>1. Non-Invasive BCI Devices</h2></a>
+    <div class="row g-4">
+
+        <!-- EEG -->
+        <div class="col-lg-4 col-md-6">
+            <div class="bci-card" data-bs-toggle="modal" data-bs-target="#eegModal">
+
+                <div class="image-container">
+                    <img src="assets/image/eegxonheadset.webp"
+                        alt="EEG Headset">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">EEG Headset</h5>
+                    <p class="card-text">Measures brain waves.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- fNIRS -->
+        <div class="col-lg-4 col-md-6">
+            <div class="bci-card" data-bs-toggle="modal" data-bs-target="#fnirsModal">
+
+                <div class="image-container">
+                    <img src="assets/image/fnirs.webp"
+                        alt="fNIRS">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">fNIRS</h5>
+                    <p class="card-text">Measures blood oxygen.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- MEG -->
+        <div class="col-lg-4 col-md-6">
+            <div class="bci-card" data-bs-toggle="modal" data-bs-target="#megModal">
+
+                <div class="image-container">
+                    <img src="assets/image/meg.webp"
+                        alt="MEG">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">MEG</h5>
+                    <p class="card-text">Detects magnetic fields.</p>
+                </div>
+
+            </div>
+        </div>
+       
+        <!-- Partially Invasive -->
+ <a href="#partially-invasive" style="text-decoration: none;"> <h2>2. Partially Invasive BCI Devices</h2></a>
+    <div class="row g-4">
+
+        <!-- ECoG -->
+        <div class="col-lg-4 col-md-6">
+            <div class="bci-card" data-bs-toggle="modal" data-bs-target="#ecogModal">
+
+                <div class="image-container">
+                    <img src="assets/image/ECoG.webp"
+                        alt="ECoG">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">ECoG</h5>
+                    <p class="card-text">Records electrical activity directly from the surface of the brain (cortex) using electrodes placed under the skull.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Stentrode -->
+        <div class="col-lg-4 col-md-6">
+            <div class="bci-card" data-bs-toggle="modal" data-bs-target="#stentrodeModal">
+
+                <div class="image-container">
+                    <img src="assets/image/Stentrode.webp"
+                        alt="Stentrode">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Stentrode</h5>
+                    <p class="card-text">Records brain activity through a blood vessel.</p>
+                </div>
+
+            </div>
+        </div>
+
+         <!--Invasive -->
+         <a href="#invasive" style="text-decoration: none;"> <h2>3. Invasive BCI Devices</h2></a>
+         <!-- Neuralink N1 -->
+           <div class="col-lg-4 col-md-6">
+            <div class="bci-card" data-bs-toggle="modal" data-bs-target="#neuralinkModal">
+
+                <div class="image-container">
+                    <img src="assets/image/Neuralink N1.webp"
+                        alt="Neuralink">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Neuralink</h5>
+                    <p class="card-text">Implanted device that records brain signals.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Layer 7 Implant -->
+           <div class="col-lg-4 col-md-6">
+            <div class="bci-card" data-bs-toggle="modal" data-bs-target="#layerimplantModal">
+
+                <div class="image-container">
+                    <img src="assets/image/Precision Neuroscience Layer 7.webp"
+                        alt="Layer 7 Implant">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Layer 7 Implant</h5>
+                    <p class="card-text">Flexible implant placed on the brain's surface.</p>
+                </div>
+
+            </div>
+        </div>
+        
+</section>
+
+<!-- EEG Modal-->
+
+<div class="modal fade" id="eegModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">EEG Headset</h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="ratio ratio-16x9">
+
+                <iframe
+                    src="https://www.youtube.com/embed/qZ1Kjgr7VHM?si=YaBaT9TeB_87evOU"
+                    title="EEG Headset"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- fNIRS Modal-->
+
+<div class="modal fade" id="fnirsModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">fNIRS</h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="ratio ratio-16x9">
+
+                <iframe
+                    src="https://www.youtube.com/embed/y_mTFjNN5dc?si=rgQNc5J2v3kll6Bn"
+                    title="fNIRS"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Meg Modal-->
+
+<div class="modal fade" id="megModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">MEG</h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="ratio ratio-16x9">
+
+                <iframe
+                    src="https://www.youtube.com/embed/RCl66Shprmo?si=VQgfFFq6wTQdZi2K"
+                    title="MGE Youtube Video"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ECoG Modal-->
+<div class="modal fade" id="ecogModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">ECoG</h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="ratio ratio-16x9">
+
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/Fwb5SbPRfVA?si=rzD7GgminhBF1KlN" title="ECoG Youtube Video" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Strendtrode Modal-->
+<div class="modal fade" id="stentrodeModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Stentrode</h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="ratio ratio-16x9">
+
+<iframe  src="https://www.youtube.com/embed/H8rb-E4kj74?si=85kFnAV49eqfLz39" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="Strendtrode Youtube Video" ></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Neuralink Modal-->
+<div class="modal fade" id="neuralinkModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Neuralink</h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="ratio ratio-16x9">
+
+<iframe src="https://www.youtube.com/embed/MopfuotBDdo?si=4ymOywu-IFoVjIS7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--Layer 7 Implant-->
+<div class="modal fade" id="layerimplantModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Layer 7 Implant</h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="ratio ratio-16x9">
+
+<iframe src="https://www.youtube.com/embed/_KDsiRFznNg?si=i-Em6xwuFxjbcnoP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Non-Invasive BCI -->
+<section id="non-invasive">
+
+  <h1>1. Non-Invasive BCIs</h1>
+
+  <p class="lead">
+    Non-invasive BCIs measure brain activity using sensors <strong>placed on the scalp</strong>,
+    allowing users to interact with computers <strong>without requiring surgery.</strong>
+  </p>
+<!-- FACT 86 billion Neurons -->
+  <details class="fact-card">
+  <summary class="fact-title" aria-expanded="false">
+    Did you know?
+  </summary>
+
+  <div class="fact-content">
+    <p>
+      The human brain remains continuously active therefore
+      approximately <strong>86 billion neurons</strong> generate electrochemical impulses at all times,
+      collectively producing measurable electrical activity detectable at the scalp.
+    </p>
+
+    <p class="fact-source">
+      Source:
+      <a href="https://www.theguardian.com/science/blog/2012/feb/28/how-many-neurons-human-brain"
+         
+         rel="noopener noreferrer">
+        The Guardian Human brain neurons article
+      </a>
+    </p>
+  </div>
+</details>
+
+<h2 class="mt-5">1.1 Examples of Non-invasive BCI Acquisition Methods</h2>
+
+<section id="eeg" class="mt-4">
+  <h3 class="subsection-title">1.1.1 Electroencephalogram (EEG) signals</h3>
+
+  <p>EEEG remains the dominant modality for non-invasive brain-computer interfaces. <strong>Electrodes</strong> placed on the scalp measure the summed electrical potentials generated by large populations of synchronised cortical neurons. These signals are extremely weak-typically ranging from 1 to 100 microvolts and are further attenuated as they pass through the volume-conducting properties of the scalp and skull tissues.</p>
+</section> 
+          
+<section id="fmri" class="mt-4">
+  <h3 class="subsection-title">1.1.2 Functional Magnetic Resonance Imaging (FMRI) 
+ signals</h3>
+
+  <p>fMRI is a kind of <abbr title="Magnetic Resonance Imaging ">MRI</abbr>, usually used to deliver structural pictures of human body. In the specialised application of MRI, it is used to produce tomographic images of variations in hemodynamic responses which represent the temporal changes in neural activity. In fMRI, a high Tesla magnetic field combined with radiofrequency (RF) pulse and magnetic gradient is used to image the patient's brain, based on the principle of <abbr title="Nuclear Magnetic Resonance ">NMR</abbr>. It is neither radioactive nor invasive with few known side effects</p>
+</section> 
+          
+
+
+</section>
+
+      </div>
+    </div>
+            <!-- End of Content -->
+          </div>
+
+          <!-- TABLE OF CONTENTS -->
+          
+        </div>
+      </div>
+    </main>
+    <!-- Contact/Feedback Section -->
+    <section id="feedback" class="contact-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Contact Info -->
+          <div class="col-lg-5">
+            <h2 class="fw-bold mb-4 titles">Contact and Feedback Form</h2>
+
+            <!-- Phone -->
+            <div class="d-flex align-items-center mb-4">
+              <div class="contact-icon me-3">
+                <i class="bi bi-telephone"></i>
+              </div>
+
+              <div>
+                <h6 class="mb-1 fw-bold">Call:</h6>
+                <p class="mb-0">+230 5145 4277</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="d-flex align-items-center">
+              <div class="contact-icon me-3">
+                <i class="bi bi-envelope"></i>
+              </div>
+
+              <div>
+                <h6 class="mb-1 fw-bold">Email</h6>
+                <p class="mb-0">
+                  <a
+                    href="mailto:bciquestfeedback@outlook.com"
+                    class="email-link"
+                  >
+                    bciquestfeedback@outlook.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-lg-7">
+            <div class="contact-card p-4">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                    <br />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your Message..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="lead titles fs-3 fw-bold">Location</p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14979.882927749813!2d57.46172443797691!3d-20.176944089487353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c515b0e4151cd%3A0x2c3fc4e25bb92a4b!2sUniversity%20of%20Technology%2C%20Mauritius!5e0!3m2!1sen!2smu!4v1782287910468!5m2!1sen!2smu"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container text-center">
+        <!-- Social Icons -->
+        <div class="social-icons mb-3">
+          <a href="https://www.instagram.com/?hl=en" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="https://x.com/" aria-label="Twitter">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+
+          <a href="https://www.youtube.com/" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+        <p>
+          This website was developed as part of the
+          <strong>WAT2143C - Secure Frontend Application</strong>
+          as part of the
+          <a
+            href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/"
+            rel="noopener noreferrer"
+          >
+            BSc (Hons) Cyber Security
+          </a>
+          programme at the University of Technology, Mauritius.
+        </p>
+
+        <p class="small mb-1">© 2026 BCI Quest. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Back to top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+  </body>
+</html>

@@ -2,378 +2,376 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="BCI Quest explores Brain-Computer Interfaces, innovations, applications, ethics and cybersecurity challenges."
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta
-      name="keywords"
-      content="BCI, Brain Computer Interface, EEG, neuroscience, neural technology"
-    />
-    <meta name="author" content="Yeev" />
+    <title>BCI Device Gallery</title>
 
-    <title>BCI Quest</title>
-
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- Css Style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      :root {
+        --deep-teal: #0a6173;
+        --dark-blue: #050a2a;
+        --steel-blue: #0a4174;
+        --deep-purple: #5d3fd3;
+      }
 
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/image/favicon.ico" />
+      body {
+        background: linear-gradient(
+          135deg,
+          var(--dark-blue),
+          var(--steel-blue)
+        );
+        color: white;
+        font-family: Arial, sans-serif;
+      }
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+      .section-title {
+        text-align: center;
+        margin: 50px 0 20px;
+        font-weight: bold;
+      }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+      .sub-text {
+        text-align: center;
+        opacity: 0.8;
+        margin-bottom: 30px;
+      }
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+      /* CARD */
+      .bci-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: 0.3s;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .bci-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 25px rgba(93, 63, 211, 0.5);
+      }
+
+      .bci-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+
+      .bci-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .badge-type {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: var(--deep-purple);
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 20px;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .card-btn {
+        margin-top: 10px;
+        background: var(--deep-teal);
+        border: none;
+        padding: 8px 12px;
+        color: white;
+        border-radius: 8px;
+      }
+
+      .card-btn:hover {
+        background: var(--deep-purple);
+      }
+
+      /* MODAL */
+      .modal-content {
+        background: #07122e;
+        color: white;
+      }
+
+      .modal-header {
+        background: var(--deep-teal);
+      }
+
+      .close-btn {
+        background: var(--deep-purple);
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+      }
+
+      .close-btn:hover {
+        background: var(--deep-teal);
+      }
+    </style>
   </head>
-  <body class="light-page" id="top">
-    <!-- HEADER & NAVIGATION-->
-    <header>
-      <!-- Nav Bar -->
-      <nav
-        class="navbar navbar-expand-lg navbar-dark"
-        aria-label="Main Navigation"
-      >
-        <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="assets/image/logo.svg"
-              alt="BCI Quest Logo"
-              width="180"
-              height="90"
-            />
-          </a>
 
-          <!-- Mobile Menu Button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+  <body>
+    <h1 class="section-title">BCI Device Gallery</h1>
+    <p class="sub-text">
+      Explore Non-Invasive, Partially Invasive and Invasive Brain-Computer
+      Interface technologies
+    </p>
+
+    <div class="container">
+      <!-- ================= NON-INVASIVE ================= -->
+      <h3 class="mt-5">Non-Invasive Devices</h3>
+
+      <div class="row g-4">
+        <!-- EEG -->
+        <div class="col-md-6">
+          <div
+            class="bci-card"
+            data-bs-toggle="modal"
+            data-bs-target="#eegModal"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Navigation Links -->
-          <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto">
-              <!-- HOME -->
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-
-              <!-- ABOUT BCIs DROPDOWN -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  aria-label="About BCIs submenu"
-                >
-                  About BCIs
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="intro.html">Introduction</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="history.html">History</a>
-                  </li>
-                </ul>
-              </li>
-
-              <!-- BCI TECHNOLOGY DROPDOWN -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  BCI Technology
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="application.html"
-                      >Applications</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="healthcare.html"
-                      >Healthcare</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="device.html">Devices</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="innovations.html"
-                      >Innovations</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <!-- RISKS & ETHICS DROPDOWN -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  Risks & Ethics
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="risks.html">Risks</a></li>
-                  <li>
-                    <a class="dropdown-item" href="ethics.html">Ethics</a>
-                  </li>
-                </ul>
-              </li>
-
-              <!-- QUIZ -->
-              <li class="nav-item">
-                <a class="nav-link" href="quiz.html">Quiz</a>
-              </li>
-
-              <!-- CONTACT -->
-              <li class="nav-item">
-                <a class="nav-link" href="#feedback">
-                  <i class="bi bi-telephone"></i> Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Main section -->
-    <main class="page-content">
-      <!-- Breadcrumbs -->
-      <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item">About BCIs</li>
-            <li class="breadcrumb-item active" aria-current="page">History</li>
-          </ol>
-        </nav>
-      </div>
-
-      <!-- Main Content -->
-      <div class="container py-5">
-       
-            <!-- End of Content -->
-      </div>
-
-          <!-- TABLE OF CONTENTS -->
-          <div class="col-lg-4 d-none d-xl-block">
-            <aside class="toc">
-              <h2 class="toc-title">On This Page</h2>
-
-              <ul class="toc-list">
-                <li><a href="#what-is-bci">What is a BCI?</a></li>
-                <li><a href="#how-it-works">How BCIs Work</a></li>
-                <li><a href="#types">Types of BCIs</a></li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- Contact/Feedback Section -->
-    <section id="feedback" class="contact-section py-5">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <!-- Contact Info -->
-          <div class="col-lg-5">
-            <h2 class="fw-bold mb-4 titles">Contact and Feedback Form</h2>
-
-            <!-- Phone -->
-            <div class="d-flex align-items-center mb-4">
-              <div class="contact-icon me-3">
-                <i class="bi bi-telephone"></i>
-              </div>
-
-              <div>
-                <h6 class="mb-1 fw-bold">Call:</h6>
-                <p class="mb-0">+230 5145 4277</p>
-              </div>
-            </div>
-
-            <!-- Email -->
-            <div class="d-flex align-items-center">
-              <div class="contact-icon me-3">
-                <i class="bi bi-envelope"></i>
-              </div>
-
-              <div>
-                <h6 class="mb-1 fw-bold">Email</h6>
-                <p class="mb-0">
-                  <a
-                    href="mailto:bciquestfeedback@outlook.com"
-                    class="email-link"
-                  >
-                    bciquestfeedback@outlook.com</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Side -->
-          <div class="col-lg-7">
-            <div class="contact-card p-4">
-              <form>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label class="form-label">Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Name"
-                    />
-                    <br />
-                  </div>
-
-                  <div class="col-md-6">
-                    <label class="form-label">Phone</label>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      placeholder="Phone Number"
-                    />
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label">Message</label>
-                  <textarea
-                    class="form-control"
-                    rows="4"
-                    placeholder="Your Message..."
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            <span class="badge-type">Non-Invasive</span>
+            <img src="assets/image/eegxonheadset.webp" alt="EEG Headset" />
+            <div class="card-body">
+              <div class="card-title">EEG Headset</div>
+              <p>Measures electrical brain activity via scalp electrodes.</p>
+              <button class="card-btn">Watch Video</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Location Section -->
-    <section id="location" class="py-5">
-      <div class="container">
-        <div class="text-center mb-4">
-          <p class="lead titles fs-3 fw-bold">Location</p>
-        </div>
-
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14979.882927749813!2d57.46172443797691!3d-20.176944089487353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c515b0e4151cd%3A0x2c3fc4e25bb92a4b!2sUniversity%20of%20Technology%2C%20Mauritius!5e0!3m2!1sen!2smu!4v1782287910468!5m2!1sen!2smu"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container text-center">
-        <!-- Social Icons -->
-        <div class="social-icons mb-3">
-          <a href="https://www.instagram.com/?hl=en" aria-label="Instagram">
-            <i class="bi bi-instagram"></i>
-          </a>
-
-          <a href="https://www.facebook.com/" aria-label="Facebook">
-            <i class="bi bi-facebook"></i>
-          </a>
-
-          <a href="https://x.com/" aria-label="Twitter">
-            <i class="bi bi-twitter-x"></i>
-          </a>
-
-          <a href="https://www.youtube.com/" aria-label="YouTube">
-            <i class="bi bi-youtube"></i>
-          </a>
-        </div>
-        <p>
-          This website was developed as part of the
-          <strong>WAT2143C - Secure Frontend Application</strong>
-          as part of the
-          <a
-            href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/"
-            rel="noopener noreferrer"
+        <!-- fNIRS -->
+        <div class="col-md-6">
+          <div
+            class="bci-card"
+            data-bs-toggle="modal"
+            data-bs-target="#fnirsModal"
           >
-            BSc (Hons) Cyber Security
-          </a>
-          programme at the University of Technology, Mauritius.
-        </p>
-
-        <p class="small mb-1">© 2026 BCI Quest. All rights reserved.</p>
+            <span class="badge-type">Non-Invasive</span>
+            <img src="assets/image/fnirs.webp" alt="fNIRS System" />
+            <div class="card-body">
+              <div class="card-title">fNIRS System</div>
+              <p>Measures blood oxygen changes in the brain.</p>
+              <button class="card-btn">Watch Video</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="js/script.js"></script>
+      <!-- ================= PARTIALLY INVASIVE ================= -->
+      <h3 class="mt-5">Partially Invasive Devices</h3>
 
-    <!-- Back to top Button -->
-    <a href="#top" class="back-to-top" aria-label="Back to top">
-      <i class="bi bi-arrow-up"></i>
-    </a>
+      <div class="row g-4">
+        <!-- ECoG -->
+        <div class="col-md-6">
+          <div
+            class="bci-card"
+            data-bs-toggle="modal"
+            data-bs-target="#ecogModal"
+          >
+            <span class="badge-type">Partially Invasive</span>
+            <img src="assets/image/ECoG.webp" alt="ECoG Device" />
+            <div class="card-body">
+              <div class="card-title">ECoG</div>
+              <p>Electrodes placed on brain surface under skull.</p>
+              <button class="card-btn">Watch Video</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stentrode -->
+        <div class="col-md-6">
+          <div
+            class="bci-card"
+            data-bs-toggle="modal"
+            data-bs-target="#stentrodeModal"
+          >
+            <span class="badge-type">Partially Invasive</span>
+            <img src="assets/image/Stentrode.webp" alt="Stentrode Device" />
+            <div class="card-body">
+              <div class="card-title">Stentrode</div>
+              <p>Implanted via blood vessels for neural recording.</p>
+              <button class="card-btn">Watch Video</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= INVASIVE ================= -->
+      <h3 class="mt-5">Invasive Devices</h3>
+
+      <div class="row g-4">
+        <!-- Utah Array -->
+        <div class="col-md-6">
+          <div
+            class="bci-card"
+            data-bs-toggle="modal"
+            data-bs-target="#utahModal"
+          >
+            <span class="badge-type">Invasive</span>
+            <img src="assets/image/Utah Array.webp" alt="Utah Array" />
+            <div class="card-body">
+              <div class="card-title">Utah Array</div>
+              <p>Microelectrode array implanted in cortex.</p>
+              <button class="card-btn">Watch Video</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Neuralink -->
+        <div class="col-md-6">
+          <div
+            class="bci-card"
+            data-bs-toggle="modal"
+            data-bs-target="#neuralinkModal"
+          >
+            <span class="badge-type">Invasive</span>
+            <img src="assets/image/Neuralink N1.webp" alt="Neuralink N1" />
+            <div class="card-body">
+              <div class="card-title">Neuralink N1</div>
+              <p>High-density implant for neural signal decoding.</p>
+              <button class="card-btn">Watch Video</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MODALS ================= -->
+
+    <!-- EEG -->
+    <div class="modal fade" id="eegModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              data-video
+              src="https://www.youtube.com/embed/qZ1Kjgr7VHM"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="text-center p-3">
+            <button class="close-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fNIRS -->
+    <div class="modal fade" id="fnirsModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              data-video
+              src="https://www.youtube.com/embed/y_mTFjNN5dc"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center p-3">
+            <button class="close-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ECoG -->
+    <div class="modal fade" id="ecogModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              data-video
+              src="https://www.youtube.com/embed/Fwb5SbPRfVA"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center p-3">
+            <button class="close-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stentrode -->
+    <div class="modal fade" id="stentrodeModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              data-video
+              src="https://www.youtube.com/embed/EBql_vCQDD8"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center p-3">
+            <button class="close-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Utah -->
+    <div class="modal fade" id="utahModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              data-video
+              src="https://youtu.be/ItI6PqSTdHQ?si=dK-CkAuldB0uQrOV"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center p-3">
+            <button class="close-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Neuralink -->
+    <div class="modal fade" id="neuralinkModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              data-video
+              src="https://youtu.be/DmqSYgM8QHc?si=LdBavpO__6ehI7nc"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center p-3">
+            <button class="close-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= JS (stop video) ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.addEventListener("hidden.bs.modal", () => {
+          modal.querySelectorAll("iframe").forEach((frame) => {
+            frame.src = frame.src; // stop video
+          });
+        });
+      });
+    </script>
   </body>
 </html>

@@ -3,15 +3,18 @@
 :root {
 
     --deep-royal-blue: #0A1F73;
-    --dark-blue: #050A2A;
-    --steel-blue: #0A4174;
-    --deep-teal: #0A6173;
-    --sky-blue: #575a5c;
+    --sky-blue: #8FC2F2;
     --electric-cyan: #00D1FF;
-    --metallic-silver: #C7D0E0;
     --soft-violet: #8A7CFF;
-    --ice-white: #F4F8FF;
     --silver-gray: #AAB4C8;
+
+    /* Light theme */
+    --metallic-silver: #C7D0E0;
+    --deep-teal: #0A6173;
+     --dark-blue: #050A2A;
+    --steel-blue: #0A4174;
+     --deep-purple: #5D3FD3;
+       --ice-white: #F4F8FF;
 
     --font-body: 'Inter', sans-serif;
     --font-title: 'Space Grotesk', sans-serif;
@@ -297,6 +300,7 @@ html{
      font-family: var(--font-body);
        padding-top: 140px;
        margin-top: 30px;
+       font-size: 18px;
 }
 
 /* Titles */
@@ -326,12 +330,21 @@ html{
 
      font-family: var(--font-title);
 
-    font-weight: 700;
+    font-weight: 500;
 
-    color: var(--dark-blue);
+    color: var(--steel-blue);
+    font-size: 28px;
 
 }
 
+.subsection-title {
+  font-weight: 450;
+  margin-top: 1rem;
+  font-size: 1.40rem;
+  color: var(--deep-royal-blue);
+}
+
+  
 .light-page p{
 
      font-family: var(--font-body);
@@ -369,6 +382,21 @@ html{
 
     font-weight: 600;
 }
+
+/* Word Link */
+.word-link {
+    color: var(--deep-teal);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.word-link:hover {
+    color: var(--deep-purple); 
+    border-bottom-color:var(--deep-purple);
+}
+
 
 /* Table of Content */
 .toc{
@@ -465,5 +493,177 @@ html{
 .toc a.active {
     background-color: #0A6173;
     color: white;
+}
+
+/* Devices */
+#eeg,
+#ecog,
+#intracortical,
+#fmri {
+    scroll-margin-top: 140px;
+}
+
+/* Accordion  */
+.signal-link{
+    display:inline-block;
+    padding:3px 10px;
+margin: 2px 4px;
+    background:#e8f4f8;
+
+    color:var(--deep-teal);
+
+    border:1px solid var(--deep-teal);
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:all .3s ease;
+}
+
+.signal-link:hover,
+.signal-link:focus{
+    background:var(--deep-teal);
+    color:white;
+
+    transform:translateY(-2px);
+}
+
+/* Did you know */
+.quick-facts{
+
+    border: none;
+    border-radius: 15px;
+    background: #ffffff;
+}
+
+.quick-facts .card-header{
+
+    background: var(--deep-teal);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.quick-facts h2{
+
+    color: var(--ice-white);
+    font-size: 1.3rem;
+}
+
+.quick-facts p{
+
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+/* Facts card */
+.fact-card {
+  border-left: 4px solid var(--deep-teal);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  max-width: 700px;
+}
+
+.fact-title {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--deep-teal);
+  font-size: 1.1rem;
+  list-style: none;
+}
+
+.fact-title:focus {
+ background: var(--sky-blue)
+}
+
+.fact-content {
+  margin-top: 0.8rem;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.fact-source {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--deep-teal);
+}
+
+.fact-source a {
+  color: var(--deep-royal-blue);
+  text-decoration: none;
+}
+
+.fact-source a:hover {
+  text-decoration: underline;
+}
+
+
+/* Gallery device.html */
+
+.bci-card{
+    background: var(--ice-white);
+    border: 1px solid var(--metallic-silver);
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease;
+    height: 100%;
+}
+
+.bci-card:hover{
+    transform: translateY(-8px);
+}
+
+.image-container{
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+}
+
+.image-container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: .35s;
+}
+
+.bci-card:hover img{
+    transform: scale(1.14);
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-title{
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin-bottom: .4rem;
+}
+
+.card-text{
+    color: var(--deep-teal);
+    margin-bottom: 0;
+}
+
+.modal-content{
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.modal-header{
+    background: var(--deep-teal);
+    color: white;
+}
+
+.btn-close{
+    filter: invert(1);
 }
 

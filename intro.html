@@ -54,6 +54,7 @@
     />
   </head>
   <body class="light-page" id="top">
+    <!-- Intro -->
     <!-- HEADER & NAVIGATION-->
     <header>
       <!-- Nav Bar -->
@@ -250,11 +251,11 @@
                     <li>Parkinson's Disease</li>
                     <li>Multiple Sclerosis (MS)</li>
                     <li>Locked-in Syndrome</li>
-                   <li>Spinal Cord Injury</li>
-                  <li>Traumatic Brain Injury (TBI)</li>
-                  <li>Paraplegia</li>
-                  <li>Quadriplegia (Tetraplegia)</li>
-                  <li>Stroke</li>
+                    <li>Spinal Cord Injury</li>
+                    <li>Traumatic Brain Injury (TBI)</li>
+                    <li>Paraplegia</li>
+                    <li>Quadriplegia (Tetraplegia)</li>
+                    <li>Stroke</li>
                 </ul>
                 
               </p>
@@ -493,7 +494,7 @@
             <!-- End of Content -->
           </div>
 
-          <!-- TABLE OF CONTENTS -->
+          <!-- Table of Content -->
           <div class="col-lg-4 d-none d-xl-block">
             <aside class="toc">
               <h2 class="toc-title">On This Page</h2>
@@ -551,15 +552,21 @@
           <!-- Right Side -->
           <div class="col-lg-7">
             <div class="contact-card p-4">
-              <form>
+              <form id="contactForm" novalidate>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label class="form-label">Name</label>
                     <input
                       type="text"
+                      id="name"
                       class="form-control"
                       placeholder="Name"
+                      required
+                      minlength="2"
+                      maxlength="50"
+                      
                     />
+                    <small id="nameError" style="color:deeppink"></small>
                     <br />
                   </div>
 
@@ -567,9 +574,12 @@
                     <label class="form-label">Phone</label>
                     <input
                       type="tel"
+                      id="phone"
                       class="form-control"
                       placeholder="Phone Number"
+                      required
                     />
+                    <small id="phoneError" style="color:deeppink"></small>
                   </div>
                 </div>
 
@@ -577,18 +587,25 @@
                   <label class="form-label">Email</label>
                   <input
                     type="email"
+                    id="email"
                     class="form-control"
                     placeholder="Email"
+                    required
                   />
+                  <small id="emailError" style="color:deeppink"></small>
                 </div>
 
                 <div class="mb-3">
                   <label class="form-label">Message</label>
                   <textarea
                     class="form-control"
+                    id="message"
                     rows="4"
-                    placeholder="Your Message..."
+                    placeholder="Your Message"
+                    required
+                    maxlength="500"
                   ></textarea>
+                  <small id="messageError" style="color:deeppink"></small>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

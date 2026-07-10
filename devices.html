@@ -54,6 +54,7 @@
     />
   </head>
   <body class="light-page" id="top">
+    <!-- Device -->
     <!-- HEADER & NAVIGATION-->
     <header>
       <!-- Nav Bar -->
@@ -209,18 +210,64 @@
                Explore the different types of Brain-Computer Interfaces, how they are placed, their advantages and limitations, and the technologies that make them possible.
               </p>
 
- <figure class="mb-5 p-3 rounded">
-                <img
-                  src="assets/image/typeofbci.webp"
-                  alt="Types of (BCIs) by degree of invasiveness."
-                  class="img-fluid rounded shadow"
-                />
-                <!-- Figure 2 -->
-                <figcaption class="mt-1 fst-italic small">
-               Figure 1: Diagram illustrating the placement and categories of BCIs (non-invasive, minimal-invasive, and invasive).
-                </figcaption>
-              </figure>
-            </section>
+ <!-- Image Map-->
+  <p class="sub-text">
+        Click on BCI type (Non-Invasive, Minimal-Invasive and Invasive) for futher explanation.
+    </p>
+<div class="container my-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-12">
+
+            <img src="assets/image/ImageMap.webp"
+                 class="img-fluid"
+                 usemap="#image-map"
+                 alt="Types of Brain Computer Interface devices"
+                 style="max-width:550px; width: 100%; height: auto; display: block; margin: auto;">
+
+<figcaption class="text-center mt-3 fst-italic small text-muted">
+        <strong>Figure 1.</strong> Type of BCIs
+    </figcaption>
+            <map name="image-map">
+
+                <!-- Non-Invasive BCI -->
+                <area 
+                    target="" 
+                    alt="Non-Invasive BCI" 
+                    title="Non-Invasive BCI" 
+                    href="#non-invasive" 
+                    coords="73,71,303,111,354,78,640,124" 
+                    shape="rect">
+
+
+                <!-- Minimal Invasive BCI -->
+                <area 
+                    target="" 
+                    alt="Minimal Invasive BCI" 
+                    title="Minimal Invasive BCI" 
+                    href="#minimal-invasive" 
+                    coords="347,83,645,115,462,247" 
+                    shape="rect">
+
+
+                <!-- Invasive BCI -->
+                <area 
+                    target="" 
+                    alt="Invasive BCI" 
+                    title="Invasive BCI" 
+                    href="#invasive" 
+                    coords="400,220,700,350" 
+                    shape="rect">
+
+            </map>
+
+        </div>
+
+    </div>
+
+</div>
+
 
             <!-- BCI Gallery -->
 
@@ -329,7 +376,7 @@
         </div>
 
          <!--Invasive -->
-         <h2  style="text-decoration: none;">3. Invasive BCI Devices</h2>
+         <h3  style="text-decoration: none;">3. Invasive BCI Devices</h3>
          <!-- Neuralink N1 -->
            <div class="col-lg-4 col-md-6">
             <div class="bci-card" data-bs-toggle="modal" data-bs-target="#neuralinkModal">
@@ -646,6 +693,7 @@
 
 </div>
 
+<!-- Explanation Of BCI types -->
 <!-- Non-Invasive BCI -->
 <section id="non-invasive">
 
@@ -679,10 +727,10 @@
   </div>
 </details>
 
-<h3 class="mt-5">1.1 Examples of Non-invasive BCI Acquisition Methods</h3>
+<h3 class="mt-5"> Examples of Non-invasive BCI Acquisition Methods</h3>
 
 <section id="eeg" class="mt-4" aria-labelledby="eeg-title">
-  <h3 class="subsection-title">1.1.1 Electroencephalogram (EEG) signals</h3>
+  <h3 class="subsection-title">1.1 Electroencephalogram (EEG) signals</h3>
 
   <h4>What is EEG?</h4>
    <p>It</strong> measures the brain's electrical activity. Small <strong>electrodes</strong> placed on the <strong>scalp</strong> record electrical potentials produced by electrical current flow in and around  <a class="term word-link"
@@ -704,85 +752,196 @@
 </figure>
             </section>
 <!-- Flip card -->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-    <button class="flip-card" onclick="this.classList.toggle('flipped')">
-
-        <div class="flip-card-inner">
-
-            <!-- Front -->
-
-            <div class="flip-card-front">
-
-                <i class="bi bi-lightning-charge-fill display-3"></i>
-
-                <h3 class="h4 mt-3">
-                    Neural Activity
-                </h3>
-
-                <span class="learn-more">
-                    Click to Explore
-                    <i class="bi bi-arrow-repeat"></i>
-                </span>
-
-            </div>
-
-            <!-- Back -->
-
-            <div class="flip-card-back">
-
-                <h3 class="h5">
-                    Neural Activity
-                </h3>
-
-                <p>
-                    Millions of neurons communicate using electrical impulses. When many neurons become active at the same time, they generate electrical fields that can be detected outside the brain. <sup><a href="#ref2" style="text-decoration: none;">[2]</a></sup>
-                </p>
-
-              
-
-            </div>
-
-        </div>
-
-    </button>
-
-</div>
+           
 
 </section> 
 
  
           
 <section id="fmri" class="mt-4">
-  <h3 class="subsection-title">1.1.2 Functional Magnetic Resonance Imaging (FMRI) 
+  <h3 class="subsection-title">1.2 Functional Magnetic Resonance Imaging (FMRI) 
  signals</h3>
 
   <p>fMRI is a kind of <abbr title="Magnetic Resonance Imaging ">MRI</abbr>, usually used to deliver structural pictures of human body. In the specialised application of MRI, it is used to produce tomographic images of variations in hemodynamic responses which represent the temporal changes in neural activity. In fMRI, a high Tesla magnetic field combined with radiofrequency (RF) pulse and magnetic gradient is used to image the patient's brain, based on the principle of <abbr title="Nuclear Magnetic Resonance ">NMR</abbr>. It is neither radioactive nor invasive with few known side effects</p>
+
+  <figure class="text-center mb-5 figure-container w-70">
+    <img
+        src="assets/image/BOLDSignal.webp"
+        alt="Functional MRI visualization of brain activity based on changes
+        in blood oxygen levels."
+        class="img-fluid rounded shadow figure-image"
+    />
+
+    <figcaption class="mt-3 fst-italic small text-muted">
+        <strong>Figure 3.</strong> Functional MRI visualization of brain activity based on changes
+        in blood oxygen levels. [2]
+    </figcaption>
 </section> 
           
+<!-- Minimal Invasive -->
+<section id="minimal-invasive">
+ 
+<h1>2. Minimal-Invasive BCIs</h1>
+<p class="lead">
+  A surgery is required to <strong>open the skull</strong>, however the electrodes sit on the surface of the brain rather than penetrating into it.
+  </p>
+<h3 class="mt-5"> Example of Minimal-invasive method</h3> <br>
 
+<h3 class="subsection-title">2.1 Electrocorticography (ECoG)</h3>
+
+ <p>
+<abbr title="Electrocorticography">ECoG</abbr> is a partially invasive 
+<strong>BCI</strong> recording technique that uses 
+electrode arrays placed directly on the surface of the cerebral cortex to capture 
+brain activity. It provides a balance between signal quality and safety by offering 
+higher <strong>spatial and temporal resolution</strong> compared with non-invasive 
+methods such as <abbr title="Electroencephalography">EEG</abbr>, while avoiding 
+deeper brain tissue penetration associated with fully invasive implants.[3]
+</p>
+
+ <figure class="text-center mb-5 figure-container w-70">
+    <img
+        src="assets/image/ECoGPlacement.webp"
+        alt="ECoG Placement"
+        class="img-fluid rounded shadow figure-image"
+    />
+
+    <figcaption class="mt-3 fst-italic small text-muted">
+        <strong>Figure 4.</strong> ECoG electrode placement on the brain surface. The electrode grid is positioned on the 
+        cerebral cortex during clinical monitoring to record neural activity and assist with identifying functional brain regions before surgery. [4]
+    </figcaption>
+</section>
+
+
+<!-- Invasive -->
+<section id="invasive">
+<h1>3. Invasive BCIs</h1>
+<p class="lead">
+  Invasive BCIs involve surgical implantation of electrodes <strong>directly into the brain tissue</strong>. These electrodes connect to neurons and can record brain signals with high precision.[5]
+  </p>
+
+  <h3 class="mt-5"> Example of Invasive method</h3> <br>
+  <h3 class="subsection-title">3.1 Utah Array</h3>
+
+ <p>
+<p>Utah array implant system containing multiple electrode arrays designed to record neural activity from the brain. The implant uses microelectrodes positioned within brain tissue to capture high-resolution electrical signals.</p>
+</p>
+
+  <figure class="text-center my-5">
+
+    <img src="assets/image/UtahPlacement.webp"
+         class="img-fluid rounded shadow"
+         alt="Utah Array implant containing multiple electrode arrays used for recording brain activity">
+
+    <figcaption class="mt-3 text-muted">
+        <strong>Figure 3.</strong> Utah Array Placement [6]
+    </figcaption>
+
+  </figure>
+  
+</section>
+
+<!-- References -->
 <section class="references">
 
 <h4>
-
 References
-
 </h4>
 
-<ol>
+<ol class="ieee-reference">
+
 
 <li id="ref1">
 
-[1] A. Biasiucci, B. Franceschiello, and M. M. Murray, “Electroencephalography,” <cite>Current Biology</cite> , vol. 29, no. 3, pp. R80-R85, Feb. 2019, doi: https://doi.org/10.1016/j.cub.2018.11.052.
-
+A. Biasiucci, B. Franceschiello, and M. M. Murray,
+“Electroencephalography,” 
+<i>Current Biology</i>, vol. 29, no. 3, pp. R80–R85,
+Feb. 2019,
+doi:
+<a href="https://doi.org/10.1016/j.cub.2018.11.052"
+target="_blank"
+rel="noopener noreferrer">
+10.1016/j.cub.2018.11.052
+</a>.
 
 </li>
+
+
+<li id="ref2">
+
+UC San Diego Center for Functional MRI,
+“What is fMRI?,”
+UC San Diego Center for Functional MRI. [Online].
+Available:
+<a href="https://fmri.ucsd.edu/Research/whatisfmri.html"
+target="_blank"
+rel="noopener noreferrer">
+https://fmri.ucsd.edu/Research/whatisfmri.html
+</a>
+
+</li>
+
+
+<li id="ref3">
+
+G. Schalk and E. C. Leuthardt,
+“Brain-computer interfaces using electrocorticographic signals,”
+<i>IEEE Reviews in Biomedical Engineering</i>, vol. 4,
+pp. 140–154, 2011.
+[Online].
+Available:
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6901702/"
+target="_blank"
+rel="noopener noreferrer">
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6901702/
+</a>
+
+</li>
+
 
 <li>
-[2] A. M. Beres, "Time is of the Essence: A Review of Electroencephalography (EEG) and Event-Related Brain Potentials (ERPs) in Language Research," <i>Applied Psychophysiology and Biofeedback</i>, vol. 42, no. 4, pp. 247-255, 2017. doi:10.1007/s10484-017-9371-3.
 
+ResearchGate,“Grid electrodes: Electrocorticography (ECoG) grid electrode placement.” [Online].
+Available:
+<a href="https://www.researchgate.net/figure/Grid-electrodes-A-Craniotomy-performed-for-electrocorticography-ECoG-grid-electrode_fig2_281907202"
+target="_blank"
+rel="noopener noreferrer">
+ResearchGate Figure Source
+</a>
 
 </li>
+
+
+<li id="ref5">
+
+Synapse,
+“How does invasive vs non-invasive BCI compare?”
+[Online].
+Available:
+<a href="https://synapse.patsnap.com/article/how-does-invasive-vs-non-invasive-bci-compare"
+target="_blank"
+rel="noopener noreferrer">
+Synapse Article
+</a>
+
+</li>
+
+
+<li id="ref6">
+
+Nature,
+“Brain-computer interface research resources,”
+<i>Scientific Reports</i>.
+[Online].
+Available:
+<a href="https://www.nature.com/articles/s41597-022-01180-1/figures/1"
+target="_blank"
+rel="noopener noreferrer">
+Nature Scientific Reports Figure
+</a>
+
+</li>
+
 
 </ol>
 
@@ -790,8 +949,7 @@ References
 
 </section>
 
-      </div>
-    </div>
+     
             <!-- End of Content -->
           </div>
 
@@ -843,15 +1001,21 @@ References
           <!-- Right Side -->
           <div class="col-lg-7">
             <div class="contact-card p-4">
-              <form>
+             <form id="contactForm" novalidate>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label class="form-label">Name</label>
                     <input
                       type="text"
+                      id="name"
                       class="form-control"
                       placeholder="Name"
+                      required
+                      minlength="2"
+                      maxlength="50"
+                      
                     />
+                    <small id="nameError" style="color:deeppink"></small>
                     <br />
                   </div>
 
@@ -859,9 +1023,12 @@ References
                     <label class="form-label">Phone</label>
                     <input
                       type="tel"
+                      id="phone"
                       class="form-control"
                       placeholder="Phone Number"
+                      required
                     />
+                    <small id="phoneError" style="color:deeppink"></small>
                   </div>
                 </div>
 
@@ -869,18 +1036,25 @@ References
                   <label class="form-label">Email</label>
                   <input
                     type="email"
+                    id="email"
                     class="form-control"
                     placeholder="Email"
+                    required
                   />
+                  <small id="emailError" style="color:deeppink"></small>
                 </div>
 
                 <div class="mb-3">
                   <label class="form-label">Message</label>
                   <textarea
                     class="form-control"
+                    id="message"
                     rows="4"
-                    placeholder="Your Message..."
+                    placeholder="Your Message"
+                    required
+                    maxlength="500"
                   ></textarea>
+                  <small id="messageError" style="color:deeppink"></small>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

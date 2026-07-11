@@ -719,6 +719,7 @@ html{
     color:white;
 }
 
+/* History */
 /* Timeline */
 .timeline-section{
     margin-top:3rem;
@@ -768,8 +769,9 @@ html{
     line-height:1.8;
 }
 
-
+/* Application html */
 /* Application Carousel */
+
 
 #application-carousel h1 {
     color: var(--deep-teal);
@@ -952,4 +954,39 @@ html{
 
     background-color:var(--deep-purple);
 
+}
+
+/* Fatcs Did you know */
+.fact-card {
+    border-radius: 10px;
+    padding: 0;
+    background: var(--ice-white);
+    overflow: hidden;
+}
+
+.fact-title {
+    cursor: pointer;
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: var(--deep-purple);
+    color: white;
+}
+
+.fact-title::-webkit-details-marker {
+    display: none;
+}
+
+.fact-title::after {
+    content: "+";
+    float: right;
+    font-size: 1.2rem;
+}
+
+details[open] .fact-title::after {
+    content: "-";
+}
+
+.fact-content {
+    padding: 15px;
 }

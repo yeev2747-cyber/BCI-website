@@ -53,7 +53,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body class="content">
+  <body class="light-page" id="top">
+    <!-- Intro -->
     <!-- HEADER & NAVIGATION-->
     <header>
       <!-- Nav Bar -->
@@ -67,8 +68,8 @@
             <img
               src="assets/image/logo.svg"
               alt="BCI Quest Logo"
-              width="250"
-              height="110"
+              width="180"
+              height="90"
             />
           </a>
 
@@ -137,7 +138,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="device.html">Devices</a>
+                    <a class="dropdown-item" href="devices.html">Devices</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="innovations.html"
@@ -182,172 +183,484 @@
       </nav>
     </header>
 
-    <!--MAIN CONTENT -->
-    <main></main>
-    <!-- Hero Section -->
+    <!-- Main section -->
+    <main class="page-content">
+      <!-- Breadcrumbs -->
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">Risks & Ethics</li>
+            <li class="breadcrumb-item active" aria-current="page">Risks</li>
+          </ol>
+        </nav>
+      </div>
 
-     <!-- Contact/Feedback Section -->
-     <div class="pulse-divider">
-<section id="feedback" class="contact-section py-5">
-    <div class="container">
+      <!-- Main Content -->
 
-        <div class="row align-items-center g-5">
+      <!-- Main Content -->
 
-            <!-- Contact Info -->
-            <div class="col-lg-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <!-- Main Content Left -->
+          <div class="col-lg-8" id="cybersecurity">
+            <h1>Why Cybersecurity Matters in Brain-Computer Interfaces</h1>
+            
 
-                <h2 class="fw-bold mb-4 titles">
-                    Contact and Feedback Form
-                </h2>
+<p>
+  As Brain-Computer Interfaces (BCIs) become more widely used, protecting them from
+  cyber threats becomes increasingly important.
+</p>
 
-                <!-- Phone -->
-                <div class="d-flex align-items-center mb-4">
+<ul class="cyber-list">
+  <li class="mb-3">
+    <abbr title="Brain-Computer Interfaces">BCIs</abbr> are used in
+    <strong>healthcare, research, communication, and other advanced applications.</strong>
+  </li>
 
-                    <div class="contact-icon me-3">
-                        <i class="bi bi-telephone"></i>
-                    </div>
+  <li class="mb-3">
+    Unlike traditional computers, BCIs process
+    <strong>neural data</strong> (brain signals), which may reveal a person's
+    thoughts, emotions, or medical conditions.
+  </li>
 
-                    <div>
-                        <h6 class="mb-1 fw-bold">Call:</h6>
-                        <p class="mb-0">+230 5145 4277</p>
-                    </div>
+  <li class="mb-3">
+    Since neural data is highly sensitive, it must be
+    protected from <strong>cyber threats</strong> to preserve user privacy and safety.
+  </li>
 
-                </div>
+  <li class="mb-3">
+    Many modern BCIs communicate through
+    <strong>wireless networks and cloud services</strong>, creating new cybersecurity risks.
+  </li>
 
-                <!-- Email -->
-                <div class="d-flex align-items-center">
+  <li>
+    Attackers may attempt to:
+    <ul>
+      <li>Intercept <strong>brain signals</strong> during transmission.</li>
+      <li>Gain <strong>unauthorized access</strong> to BCI devices.</li>
+      <li >Manipulate communication between the <strong>brain and external systems</strong>.</li>
+      <li class="mb-3">Steal or misuse <strong>stored neural data</strong>.</li>
+    </ul>
+  </li>
 
-                    <div class="contact-icon me-3">
-                        <i class="bi bi-envelope"></i>
-                    </div>
+  <li>
+    Strong cybersecurity measures, including
+    <strong>encryption, authentication, and secure software updates</strong>,
+    are essential to protect users and their neural data.
+  </li>
+</ul>
+<!-- Figure 1 -->
+<figure class="text-center mb-5">
+    <img src="assets/image/cyberattacks.webp"
+         class="img-fluid rounded shadow figure-image"
+         alt="Diagram showing the Brain-Computer Interface architecture and potential cybersecurity attack points.">
 
-                    <div>
-                        <h6 class="mb-1 fw-bold">Email</h6>
-                        <p class="mb-0">
-                          <a href="mailto:bciquestfeedback@outlook.com" class=" email-link">
-                                bciquestfeedback@outlook.com</a></p>
-                    </div>
+    <figcaption class="mt-2 small text-muted">
+        <strong>Figure 1.</strong> Simplified Brain-Computer Interface architecture showing the flow of neural data and possible cybersecurity attack points.
+    </figcaption>
+</figure>
 
-                </div>
+<!-- Quote -->
+<section class="quote-section my-5">
 
-            </div>
+  <blockquote class="border-start border-4 ps-4 fst-italic">
+    <p class="fs-4 mb-3">
+      "The brain is the final frontier of privacy."
+    </p>
 
-            <!-- Right Side -->
-            <div class="col-lg-7">
+    <footer class="blockquote">
+      <strong>Nita Farahany</strong>,
+      Professor of Law and Neuroethics,
+      Duke University
+    </footer>
+  </blockquote>
 
-                <div class="contact-card p-4">
-
-                    <form>
-
-                        <div class="row mb-3">
-
-                            <div class="col-md-6">
-                                <label class="form-label">Name</label>
-                                <input type="text"
-                                    class="form-control"
-                                    placeholder="Name"> <br>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label class="form-label">Phone</label>
-                                <input type="tel"
-                                    class="form-control"
-                                    placeholder="Phone Number"> 
-                            </div>
-
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email"
-                                class="form-control"
-                                placeholder="Email">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Message</label>
-                            <textarea
-                                class="form-control"
-                                rows="4"
-                                placeholder="Your Message..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">
-                            Submit
-                        </button>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
 </section>
+<!-- Table for Cyber threats -->
+<h2 class="mt-5" id="cyberThreats">Common Cybersecurity Threats to Brain-Computer Interfaces</h2>
 
-<!-- Location Section -->
- <section id="location" class="py-5">
-  <div class="container">
-<div class="text-center mb-4">
-      <p class="lead titles fs-3 fw-bold">
-    Location
+<p class="lead">
+    As BCIs exchange neural data with external devices, they may be exposed to several cybersecurity risks.
+    The table below summarises some of the most common threats identified in current research.
 </p>
-  </div>
 
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14979.882927749813!2d57.46172443797691!3d-20.176944089487353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c515b0e4151cd%3A0x2c3fc4e25bb92a4b!2sUniversity%20of%20Technology%2C%20Mauritius!5e0!3m2!1sen!2smu!4v1782287910468!5m2!1sen!2smu"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    
-  </div>
-  </div>
-    
-    
- </section>
+<div class="table-responsive">
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="container text-center">
-      <!-- Social Icons -->
-        <div class="social-icons mb-3">
+<table class="table table-bordered align-middle">
 
-            <a href="https://www.instagram.com/?hl=en" aria-label="Instagram">
-                <i class="bi bi-instagram"></i>
-            </a>
+<thead>
 
-            <a href="https://www.facebook.com/" aria-label="Facebook">
-                <i class="bi bi-facebook"></i>
-            </a>
+<tr class="table-dark">
+    <th>Cybersecurity Threat</th>
+    <th>Description</th>
+    <th>Possible Impact</th>
+</tr>
 
-            <a href="https://x.com/" aria-label="Twitter">
-                <i class="bi bi-twitter-x"></i>
-            </a>
+</thead>
 
-            <a href="https://www.youtube.com/" aria-label="YouTube">
-                <i class="bi bi-youtube"></i>
-            </a>
+<tbody>
 
-        </div>
-    <p>
-    This website was developed as part of the
-    <strong>WAT2143C - Secure Frontend Application</strong>
-    as part of the
-    <a href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/"
-     rel="noopener noreferrer" >
-        BSc (Hons) Cyber Security
-    </a>
-    programme at the University of Technology, Mauritius.
+<tr>
+    <td><strong>Neural Data Interception</strong></td>
+    <td>Attackers intercept brain signals while they are transmitted between the BCI and external devices.</td>
+    <td>Loss of privacy and exposure of sensitive neural information.</td>
+</tr>
 
-    
+<tr>
+    <td><strong>Unauthorized Device Access</strong></td>
+    <td>Hackers gain access to a BCI through weak authentication or software vulnerabilities.</td>
+    <td>Changes to device settings or unauthorized control.</td>
+</tr>
 
-        <p class="small mb-1">
-            © 2026 BCI Quest. All rights reserved.
-        </p>
+<tr>
+    <td><strong>Malware Attacks</strong></td>
+    <td>Malicious software infects the BCI system or connected computer.</td>
+    <td>Reduced performance, incorrect outputs, or device malfunction.</td>
+</tr>
+
+<tr>
+    <td><strong>Signal Manipulation</strong></td>
+    <td>Neural signals are altered or spoofed before reaching the intended system.</td>
+    <td>Incorrect commands or unsafe device behaviour.</td>
+</tr>
+
+<tr>
+    <td><strong>Cloud Data Breaches</strong></td>
+    <td>Stored neural data is accessed through compromised cloud services.</td>
+    <td>Large-scale leakage of users' brain data.</td>
+</tr>
+
+</tbody>
+
+</table>
+
+
+</div>
+<div class="mt-5">
+
+ <h1>Physical Health Risks of Brain-Computer Interfaces</h1>
+ <!-- BlockQuote -->
+<blockquote class="border-start ps-4 fst-italic my-3 mb-4">
+
+<p class="fs-5">
+"I knew there were a lot of risks going in, and I knew it might not work.
+I didn't anticipate any of that though.
+I had complete faith in Neuralink."
 </p>
-  </div>
-  
+
+<footer >
+
+<strong>Noland Arbaugh</strong>,
+the first person to receive a Neuralink brain implant (2024)
 
 </footer>
+
+</blockquote>
+<p>
+    While Brain-Computer Interfaces can improve communication, movement, and quality of life,
+    some devices require surgery to implant electrodes.<br> As with any medical procedure,
+    implantation carries physical risks that should be carefully considered.<br> These risks are
+    generally greater for <strong>partially invasive</strong> and <strong>invasive BCIs</strong>
+    compared to <strong>non-invasive BCIs</strong>.
+</p>
+
+<h2 class="mt-5">Physical Risks of Brain-Computer Interfaces</h2>
+
+<p class="lead">
+While <strong>non-invasive BCIs</strong> have very few physical risks, 
+<strong>partially invasive</strong> and <strong>fully invasive BCIs</strong> require surgery and may lead to medical complications.
+</p>
+
+<!-- Table for physical threats -->
+<div class="table-responsive" id="physicalTheats">
+<table class="table table-bordered align-middle">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Physical Risk</th>
+            <th>Description</th>
+            <th>Real Example / Further Reading</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td><strong>Infection</strong></td>
+            <td>
+                Brain surgery may introduce bacteria, causing infections around
+                the implant or surrounding brain tissue.
+            </td>
+            <td>
+                <a href="https://www.eurekalert.org/news-releases/1077377"
+                   class="word-link"
+                   target="_blank">
+                   Case Western Reserve University – Brain implant infections
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Bleeding (Hemorrhage)</strong></td>
+            <td>
+                Implantation can damage small blood vessels, resulting in bleeding
+                inside the brain.
+            </td>
+            <td>
+                <a href="https://medicalxpress.com/news/2026-05-brain-implants-hacked.html"
+                   class="word-link"
+                   target="_blank">
+                   Medical Xpress – Risks of brain implants
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Scar Tissue Formation</strong></td>
+            <td>
+                The body's immune system may form scar tissue around the electrodes,
+                reducing signal quality over time.
+            </td>
+            <td>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10403483/"
+                   class="word-link"
+                   >
+                   Brain-Computer Interface: Trends, Challenges and Threats
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Device Failure</strong></td>
+            <td>
+                Hardware components may wear out, malfunction, or require additional
+                surgery for repair or replacement.
+            </td>
+            <td>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13144110/"
+                   class="word-link"
+                   target="_blank">
+                   Brain-Computer Interface: An Update for Clinicians
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Brain Tissue Damage</strong></td>
+            <td>
+                Implanting electrodes may injure nearby neurons or brain tissue,
+                especially during surgery.
+            </td>
+            <td>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10403483/"
+                   class="word-link"
+                   target="_blank">
+                   Safety concerns in invasive BCIs
+                </a>
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>
+</div>
+</div>
+          </div>
+           <!-- Table of Content Right -->
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <aside class="toc sticky-top">
+              <h2 class="toc-title">On This Page</h2>
+
+              <ul class="toc-list">
+                <li>
+                  <a href="#cybersecurity"> Cybersecurity Risks </a>
+                </li>
+
+                <li>
+                  <a href="#cyberThreats">Cybersecurity Threats</a>
+                </li>
+
+                <li>
+                  <a href="#physicalTheats">Physical Threats</a>
+                </li>
+
+                <li>
+                  <a href="#neurable">Neurable</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+        </div>
+         
+    </main>
+    <!-- Contact/Feedback Section -->
+    <section id="feedback" class="contact-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Contact Info -->
+          <div class="col-lg-5">
+            <h2 class="fw-bold mb-4 titles">Contact and Feedback Form</h2>
+
+            <!-- Phone -->
+            <div class="d-flex align-items-center mb-4">
+              <div class="contact-icon me-3">
+                <i class="bi bi-telephone"></i>
+              </div>
+
+              <div>
+                <h6 class="mb-1 fw-bold">Call:</h6>
+                <p class="mb-0" style="color: white">+230 5145 4277</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="d-flex align-items-center">
+              <div class="contact-icon me-3">
+                <i class="bi bi-envelope"></i>
+              </div>
+
+              <div>
+                <h6 class="mb-1 fw-bold">Email</h6>
+                <p class="mb-0">
+                  <a
+                    href="mailto:bciquestfeedback@outlook.com"
+                    class="email-link"
+                  >
+                    bciquestfeedback@outlook.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-lg-7">
+            <div class="contact-card p-4">
+              <form id="contactForm" novalidate>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                      minlength="2"
+                      maxlength="50"
+                    />
+                    <small id="nameError" style="color: deeppink"></small>
+                    <br />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label">Phone</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                    <small id="phoneError" style="color: deeppink"></small>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
+                  <small id="emailError" style="color: deeppink"></small>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                    maxlength="500"
+                  ></textarea>
+                  <small id="messageError" style="color: deeppink"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="lead titles fs-3 fw-bold">Location</p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14979.882927749813!2d57.46172443797691!3d-20.176944089487353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c515b0e4151cd%3A0x2c3fc4e25bb92a4b!2sUniversity%20of%20Technology%2C%20Mauritius!5e0!3m2!1sen!2smu!4v1782287910468!5m2!1sen!2smu"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container text-center">
+        <!-- Social Icons -->
+        <div class="social-icons mb-3">
+          <a href="https://www.instagram.com/?hl=en" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="https://x.com/" aria-label="Twitter">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+
+          <a href="https://www.youtube.com/" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+        <p>
+          This website was developed as part of the
+          <strong>WAT2143C - Secure Frontend Application</strong>
+          as part of the
+          <a
+            href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/"
+            rel="noopener noreferrer"
+          >
+            BSc (Hons) Cyber Security
+          </a>
+          programme at the University of Technology, Mauritius.
+        </p>
+
+        <p class="small mb-1">© 2026 BCI Quest. All rights reserved.</p>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -355,12 +668,8 @@
     <script src="js/script.js"></script>
 
     <!-- Back to top Button -->
-    <a href="#top"
-   class="back-to-top"
-   aria-label="Back to top">
-
-    <i class="bi bi-arrow-up"></i>
-
-</a>
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
   </body>
 </html>

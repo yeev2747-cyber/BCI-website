@@ -17,6 +17,14 @@
     --font-title: 'Space Grotesk', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body.index{
     background-color: var(--dark-blue);
@@ -54,7 +62,27 @@ body.index{
     transform: translateY(-2px);
 }
 
+@media (max-width: 991px){
 
+    .navbar-nav {
+        gap: 5px;
+    }
+
+}
+
+.navbar-brand img{
+    max-width:180px;
+    height:auto;
+}
+
+
+@media(max-width:768px){
+
+    .navbar-brand img{
+        width:140px;
+    }
+
+}
 /* Dropdown background */
 .dropdown-menu {
     background-color: var(--dark-blue);
@@ -84,7 +112,22 @@ body.index{
     background: radial-gradient(circle at top, #0A1F73, #050A2A);
 }
 
+@media (max-width: 768px){
 
+    .hero-section{
+        padding: 30px 15px;
+        min-height: auto;
+    }
+
+    .hero-section h1{
+        font-size: 2rem;
+    }
+
+    .hero-section p{
+        font-size: 1rem;
+    }
+
+}
 /* Titles */
 .titles {
     background: linear-gradient(90deg, #F4F8FF, #8A7CFF, #8FC2F2);

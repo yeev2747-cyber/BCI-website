@@ -251,11 +251,11 @@
                     <li>Parkinson's Disease</li>
                     <li>Multiple Sclerosis (MS)</li>
                     <li>Locked-in Syndrome</li>
-                    <li>Spinal Cord Injury</li>
-                    <li>Traumatic Brain Injury (TBI)</li>
-                    <li>Paraplegia</li>
-                    <li>Quadriplegia (Tetraplegia)</li>
-                    <li>Stroke</li>
+                   <li>Spinal Cord Injury</li>
+                  <li>Traumatic Brain Injury (TBI)</li>
+                  <li>Paraplegia</li>
+                  <li>Quadriplegia (Tetraplegia)</li>
+                  <li>Stroke</li>
                 </ul>
                 
               </p>
@@ -340,7 +340,7 @@
                         <li><strong
                         ><a href="devices.html#ecog" class="signal-link"><abbr title="Electrocorticography">ECoG</abbr></a></strong
                       >, which records activity directly from the cortical surface</li>
-                      <li><strong>Intracortical microelectrodes</a></strong> implanted inside brain tissue</li>
+                      <li> <a href="devices.html#intracortical" class="signal-link"><strong>Intracortical microelectrodes</a></strong> implanted inside brain tissue</li>
                       <li><strong>
                         <a href="devices.html#fmri" class="signal-link"><abbr title="Functional Magnetic Resonance Imaging ">FMRI</abbr></a></strong
                       > ,which measures blood-oxygen-level changes associated with neuronal activity.</li>
@@ -460,7 +460,7 @@
 
                     <tr
                       onclick="
-                        location.href = 'devices.html#minimal-invasive'
+                        location.href = 'devices.html#partially-invasive'
                       "
                       class="clickable-row"
                       tabindex="0"
@@ -494,7 +494,7 @@
             <!-- End of Content -->
           </div>
 
-          <!-- Table of Content -->
+          <!-- TABLE OF CONTENTS -->
           <div class="col-lg-4 d-none d-xl-block">
             <aside class="toc">
               <h2 class="toc-title">On This Page</h2>
@@ -552,21 +552,15 @@
           <!-- Right Side -->
           <div class="col-lg-7">
             <div class="contact-card p-4">
-              <form id="contactForm" novalidate>
+              <form>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label class="form-label">Name</label>
                     <input
                       type="text"
-                      id="name"
                       class="form-control"
                       placeholder="Name"
-                      required
-                      minlength="2"
-                      maxlength="50"
-                      
                     />
-                    <small id="nameError" style="color:deeppink"></small>
                     <br />
                   </div>
 
@@ -574,12 +568,9 @@
                     <label class="form-label">Phone</label>
                     <input
                       type="tel"
-                      id="phone"
                       class="form-control"
                       placeholder="Phone Number"
-                      required
                     />
-                    <small id="phoneError" style="color:deeppink"></small>
                   </div>
                 </div>
 
@@ -587,25 +578,18 @@
                   <label class="form-label">Email</label>
                   <input
                     type="email"
-                    id="email"
                     class="form-control"
                     placeholder="Email"
-                    required
                   />
-                  <small id="emailError" style="color:deeppink"></small>
                 </div>
 
                 <div class="mb-3">
                   <label class="form-label">Message</label>
                   <textarea
                     class="form-control"
-                    id="message"
                     rows="4"
-                    placeholder="Your Message"
-                    required
-                    maxlength="500"
+                    placeholder="Your Message..."
                   ></textarea>
-                  <small id="messageError" style="color:deeppink"></small>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -656,31 +640,18 @@
             <i class="bi bi-youtube"></i>
           </a>
         </div>
-        <!-- Valid Css -->
-        <div>
-          <p>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-              <img
-                style="border: 0; width: 100px; height: 50px"
-                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-                alt="Valid CSS"
-              />
-            </a>
-          </p>
-        </div>
         <p>
           This website was developed as part of the
           <strong>WAT2143C - Secure Frontend Application</strong>
-          module for the <br />
+          as part of the
           <a
             href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/"
             rel="noopener noreferrer"
           >
             BSc (Hons) Cyber Security
           </a>
-          degree at the University of Technology, Mauritius.
+          programme at the University of Technology, Mauritius.
         </p>
-
 
         <p class="small mb-1">© 2026 BCI Quest. All rights reserved.</p>
       </div>

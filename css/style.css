@@ -21,11 +21,14 @@
     box-sizing: border-box;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+    /* Remove max-width: 100% */
+}
 body.index{
     background-color: var(--dark-blue);
     color: var(--ice-white);
@@ -396,6 +399,7 @@ html{
 
 
 /* Table of Content */
+/* Table of Content */
 .toc{
     position: sticky;
     top: 180px;
@@ -441,16 +445,6 @@ html{
     transition: all 0.3s ease;
 }
 
-
-/* Hover */
-
-
-.toc-list a:hover{
-    background-color: var(--deep-teal);
-    color:#C7D0E0;
-    transform: translateX(6px);
-    text-decoration: none;
-}
 
 
 /* Table */

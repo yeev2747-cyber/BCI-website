@@ -21,21 +21,36 @@ document.addEventListener("DOMContentLoaded", () => {
 // Table of content
 
 window.addEventListener("scroll", () => {
-  let sections = document.querySelectorAll("section");
-  let links = document.querySelectorAll(".toc a");
 
-  sections.forEach(section => {
-    let top = window.scrollY;
-    let offset = section.offsetTop - 200;
-    let height = section.offsetHeight;
+    let sections = document.querySelectorAll("main section[id], main div[id]");
+    let links = document.querySelectorAll(".toc a");
 
-    if (top >= offset && top < offset + height) {
-      links.forEach(link => link.classList.remove("active"));
+    let scrollPosition = window.scrollY + 250;
 
-      let activeLink = document.querySelector(`.toc a[href="#${section.id}"]`);
-      if (activeLink) activeLink.classList.add("active");
-    }
-  });
+    sections.forEach(section => {
+
+        let sectionTop = section.offsetTop;
+        let sectionHeight = section.offsetHeight;
+
+        if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+        ) {
+
+            let currentId = section.getAttribute("id");
+
+            links.forEach(link => {
+                link.classList.remove("active");
+
+                if (link.getAttribute("href") === "#" + currentId) {
+                    link.classList.add("active");
+                }
+            });
+
+        }
+
+    });
+
 });
 
 // Device Gallery
@@ -319,3 +334,23 @@ Try Again
 }
 
 loadQuestion();
+
+// Scenario Ethics
+function showChoice(choice){
+
+    let result = document.getElementById("choice-result");
+
+    result.innerHTML =
+    `
+    <div class="alert alert-info">
+        <strong>Interesting choice!</strong>
+        <br><br>
+        You selected: <strong>${choice}</strong>
+        <br><br>
+        Experts disagree because the benefits of BCIs
+        must be balanced against concerns about
+        <strong>privacy, brain data protection, and human autonomy.</strong>
+    </div>
+    `;
+
+}

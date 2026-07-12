@@ -192,403 +192,316 @@
             <li class="breadcrumb-item">
               <a href="index.html">Home</a>
             </li>
-            <li class="breadcrumb-item">BCI Technology</li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Application
-            </li>
+            <li class="breadcrumb-item">Risks & Ethics</li>
+            <li class="breadcrumb-item active" aria-current="page">Ethics</li>
           </ol>
         </nav>
       </div>
 
       <!-- Main Content -->
-      <!-- BCI Applications Carousel -->
-      <section id="application-carousel" class="my-5">
-        <div class="container">
-          <h1 class="text-center mb-4">Explore BCI Applications</h1>
-          <p class="lead text-center mb-5">
-            Discover how Brain-Computer Interfaces are transforming different
-            fields of society.
-          </p>
 
-          <div
-            id="applicationCarousel"
-            class="carousel slide carousel-fade shadow rounded overflow-hidden"
-            data-bs-ride="carousel"
-            data-bs-interval="400000"
-            data-bs-pause="hover"
-          >
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#applicationCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Gaming"
-              ></button>
+      <div class="container py-5">
+        <div class="row g-5">
+          <!-- Main Content Left -->
+          <div class="col-lg-8" id="ethics-intro">
+           <h1>Ethical and Social Challenges of Brain-Computer Interfaces</h1>
 
-              <button
-                type="button"
-                data-bs-target="#applicationCarousel"
-                data-bs-slide-to="1"
-                aria-label="Education"
-              ></button>
+    <p class="lead">
+        Brain-Computer Interfaces (<abbr title="Brain-Computer Interface">BCIs</abbr>) are transforming healthcare, communication, and assistive technologies by allowing direct communication between the human brain and computers. While these innovations have the potential to improve millions of lives, they also raise important ethical and social questions.
+    </p>
 
-              <button
-                type="button"
-                data-bs-target="#applicationCarousel"
-                data-bs-slide-to="2"
-                aria-label="Robotics"
-              ></button>
+    <p>
+        BCIs collect and process <a href="https://www.sciencedirect.com/topics/engineering/neural-data" class="word-link"><strong>neural data</strong></a>, which may reveal highly personal information about an individual's thoughts, emotions, intentions, and medical conditions. As BCIs become more advanced and increasingly integrated with <strong>artificial intelligence (AI)</strong>, society must consider how this information should be protected and who should be allowed to access or use it.
+    </p>
 
-              <button
-                type="button"
-                data-bs-target="#applicationCarousel"
-                data-bs-slide-to="3"
-                aria-label="Military"
-              ></button>
+    <p>
+        This page explores some of the major ethical challenges surrounding BCIs, including <strong>mental privacy</strong>, <strong>surveillance</strong>, <strong>human enhancement</strong>, <strong>AI integration</strong>, and the emerging concept of <strong>neurorights</strong>. Understanding these issues is essential for ensuring that neurotechnology develops in a safe, responsible, and ethical manner.
+    </p> 
+<section id="ethical-cards" class="py-5">
+
+    <h2 class="mb-4">Ethical Concerns</h2>
+
+    <div class="row g-4">
+
+        <!-- Information Card -->
+        <div class="col-lg-7">
+
+            <div class="card border-info shadow-sm h-100">
+
+                <div class="card-header bg-info text-white fw-bold">
+                    What is Mental Privacy?
+                </div>
+
+                <div class="card-body">
+
+                    <p class="card-text">
+                        <strong>Mental privacy</strong> refers to protecting a person's
+                        <strong>brain activity and neural data</strong> from
+                        unauthorized access. Unlike passwords or fingerprints,
+                        brain signals may reveal a person's
+                        <strong>thoughts, emotions, memories, intentions,</strong>
+                        and medical conditions.
+                    </p>
+
+                    <p class="card-text mb-0">
+                        As Brain-Computer Interfaces become more common,
+                        researchers argue that this information should receive
+                        the same level of protection as other fundamental
+                        <strong>human rights</strong>.
+                    </p>
+
+                </div>
+
             </div>
 
-            <!-- Carousel Slides -->
-            <div class="carousel-inner">
-              <!-- Gaming Slide -->
-              <div class="carousel-item active">
-                <img
-                  src="assets/image/Gaming (1).webp"
-                  class="d-block w-100"
-                  alt="Gaming applications using Brain-Computer Interfaces"
-                />
-                <div class="carousel-caption">
-                  <h3>Gaming</h3>
+        </div>
+        
+        
+        <!-- Discussion Card Mental-->
+        <div class="col-lg-5">
 
-                  <p>
-                    Creating immersive gaming experiences controlled by brain
-                    signals.
-                  </p>
+            <div class="card question-card shadow-sm h-100">
 
-                  <a href="#gaming" class="btn btn-primary"> Explore </a>
+                <div class="card-header">
+                    Discussion Question
                 </div>
-              </div>
 
-              <!-- Education Slide -->
-              <div class="carousel-item">
-                <img
-                  src="assets/image/Education.webp"
-                  class="d-block w-100"
-                  alt="Education applications of Brain-Computer Interfaces"
-                />
+                <div class="card-body">
 
-                <div class="carousel-caption">
-                  <h3>Education</h3>
+                    <h5 class="card-title">
+                        Who should own your brain data?
+                    </h5>
 
-                  <p>BCI improving education</p>
+                    <p class="card-text">
+                        If a Brain-Computer Interface records your thoughts and
+                        neural activity, who should legally own that data?
+                    </p>
 
-                  <a href="#education" class="btn btn-primary"> Explore </a>
+                    <ul class="mb-0">
+                        <li>The individual user</li>
+                        <li>The company that developed the device</li>
+                        <li>The healthcare provider</li>
+                        <li>The government</li>
+                    </ul>
+
                 </div>
-              </div>
 
-              <!-- Robotics Slide -->
-              <div class="carousel-item">
-                <img
-                  src="assets/image/carouselRobotics.webp"
-                  class="d-block w-100"
-                  alt="Robotics controlled using Brain-Computer Interfaces"
-                />
-
-                <div class="carousel-caption">
-                  <h3>Robotics</h3>
-
-                  <p>
-                    Allowing users to control robotic systems through brain
-                    activity.
-                  </p>
-
-                  <a href="#robotics" class="btn btn-primary"> Explore </a>
-                </div>
-              </div>
-
-              <!-- Military Slide -->
-              <div class="carousel-item">
-                <img
-                  src="assets/image/Military (1).webp"
-                  class="d-block w-100"
-                  alt="Military applications of Brain-Computer Interfaces"
-                />
-
-                <div class="carousel-caption">
-                  <h3>Military</h3>
-
-                  <p>
-                    Exploring advanced human-machine communication technologies.
-                  </p>
-
-                  <a href="#military" class="btn btn-primary"> Explore </a>
-                </div>
-              </div>
             </div>
-            <!-- Previous Button -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#applicationCarousel"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true">
-              </span>
 
-              <span class="visually-hidden"> Previous </span>
-            </button>
+        </div>
 
-            <!-- Next Button -->
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#applicationCarousel"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true">
-              </span>
+    </div>
 
-              <span class="visually-hidden"> Next </span>
-            </button>
+    <div class="row g-4 mt-5 mb-5">
+
+ <div class="col-lg-7">
+
+    <div class="card border-info shadow-sm h-100">
+
+        <div class="card-header bg-info text-white fw-bold">
+            Cerebral and Mental Integrity & Human Dignity
+        </div>
+
+        <div class="card-body">
+
+            <p class="card-text">
+                <strong>Brain-Computer Interfaces</strong> interact directly with
+                the human brain, raising concerns about protecting a person's
+                <strong>mental integrity, autonomy,</strong> and dignity.
+            </p>
+
+            <p class="card-text mb-0">
+                Neurotechnology should be developed in a way that respects
+                <strong>human rights</strong> and ensures individuals remain in
+                control of their own thoughts, decisions, and personal identity.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Discussion Card -->
+<div class="col-lg-5">
+
+    <div class="card question-card shadow-sm h-100">
+
+        <div class="card-header">
+            Discussion Question
+        </div>
+
+        <div class="card-body">
+
+            <h5 class="card-title">
+                Should there be limits on brain technology?
+            </h5>
+
+            <p class="card-text">
+                If BCIs can influence or modify brain activity, how can we ensure
+                that human freedom and dignity are protected?
+            </p>
+
+            <ul class="mb-0">
+                <li>Protect individual control over thoughts</li>
+                <li>Prevent unwanted brain manipulation</li>
+                <li>Maintain human decision-making freedom</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="col-lg-7">
+
+    <div class="card border-info shadow-sm h-100">
+
+        <div class="card-header bg-info text-white fw-bold">
+            Personal Identity
+        </div>
+
+        <div class="card-body">
+
+            <p class="card-text">
+                When <strong>Brain-Computer Interfaces</strong> connect the human
+                brain with computers, artificial intelligence may influence the way
+                people make decisions, communicate, or interact with the world.
+            </p>
+
+            <p class="card-text mb-0">
+                This raises concerns about whether advanced neurotechnology could
+                affect a person's <strong>identity, independence,</strong> and
+                ability to make decisions freely.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Discussion Card -->
+<div class="col-lg-5">
+
+    <div class="card question-card shadow-sm h-100">
+
+        <div class="card-header">
+            Discussion Question
+        </div>
+
+        <div class="card-body">
+
+            <h5 class="card-title">
+                Can technology influence who we are?
+            </h5>
+
+            <p class="card-text">
+                If AI systems help control decisions or behaviours through BCIs,
+                how can we ensure that people maintain their own identity and
+                independence?
+            </p>
+
+            <ul class="mb-0">
+                <li>Maintain personal control</li>
+                <li>Protect individual identity</li>
+                <li>Ensure human decisions remain independent</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<section id="ethical-scenario" class="my-5">
+
+    <div class="card shadow-sm scenario-card">
+
+        <div class="card-header">
+            Ethical Scenario
+        </div>
+
+        <div class="card-body text-center">
+
+            <h3 class="mb-4">
+                A company offers you a BCI that improves memory by 50%.
+            </h3>
+
+            <p>
+                However, the company will also collect and store your
+                <strong>brain data</strong>.
+            </p>
+
+            <h5 class="mt-4">
+                Would you accept this technology?
+            </h5>
+
+
+            <div class="mt-4">
+
+                <button class="btn btn-success me-2 choice-btn" onclick="showChoice('Yes')">
+                    Yes
+                </button>
+
+                <button class="btn btn-danger me-2 choice-btn" onclick="showChoice('No')">
+                    No
+                </button>
+
+                <button class="btn btn-secondary choice-btn" onclick="showChoice('Not Sure')">
+                    Not Sure
+                </button>
+
+            </div>
+
+
+            <div id="choice-result" class="mt-4"></div>
+
+
+        </div>
+
+    </div>
+
+</section>
+    
+             
+</div>
+ <!-- Table of Content Right -->
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <aside class="toc sticky-top">
+              <h2 class="toc-title">On This Page</h2>
+
+              <ul class="toc-list">
+                <li>
+                  <a href="#ethics-intro">Ethics Introduction</a>
+                </li>
+
+                <li>
+                  <a href="#ethical-cards">Ethical Concerns</a>
+                </li>
+
+                <li>
+                  <a href="#ethical-scenario">Scenario</a>
+                </li>
+
+               
+              </ul>
+            </aside>
           </div>
         </div>
-      </section>
-
-      <!-- Explanation -->
-      <!-- Gaming -->
-      <section id="gaming" aria-labelledby="gaming-title">
-        <div class="container">
-          <article>
-            <h1>Where Gaming Meets Neuroscience</h1>
-
-            <p>
-              Brain-Computer Interfaces are changing the way people interact
-              with video games by allowing actions to be controlled through
-              brain activity instead of traditional controllers.
-            </p>
-
-            <p>
-              Researchers at the University of Calgary are exploring BCI-based
-              games that help children with physical disabilities enjoy gaming
-              using only their brain signals.[1]
-            </p>
-
-            <p>
-              Using EEG headsets, brain signals are detected, analysed, and
-              converted into commands that allow users to interact with digital
-              environments.
-            </p>
-
-            <p>
-              As this technology develops, BCI gaming could combine artificial
-              intelligence and virtual reality to create more personalised
-              experiences. Watch video below to learn more how are BCI being
-              used in gaming field.
-            </p>
-
-            <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/kVaScBkmvjI"
-                title="Demonstration of Brain-Computer Interface gaming"
-                allowfullscreen
-                style="
-                  width: 80%;
-                  height: 500px;
-                  border: none;
-                  border-radius: 20px;
-                "
-                loading="lazy"
-              >
-              </iframe>
-              <figcaption class="fst-italic small">
-                Video 1: Demonstration of Brain-Computer Interface gaming
-              </figcaption>
-            </div>
-          </article>
+      </div>
         </div>
-      </section>
+</div>
 
-      <!-- Education -->
-      <section
-        id="education"
-        aria-labelledby="education-title"
-        class="mt-5 mb-5"
-      >
-        <div class="container">
-          <article>
-            <h1 id="education-title">Education</h1>
-
-            <h3>How BCIs Are Transforming Education [2]</h3>
-
-            <ul aria-labelledby="education-benefits">
-              <li>
-                Monitor student attention by measuring brain activity during
-                lessons.
-              </li>
-              <li>
-                Support personalized learning by helping teachers adapt lessons
-                to individual needs.
-              </li>
-              <li>
-                Improve student engagement through real-time feedback on focus
-                and concentration.
-              </li>
-              <li>
-                Track learning progress using students' cognitive and emotional
-                data.
-              </li>
-              <li>
-                Create more interactive classrooms by allowing teachers to
-                adjust lessons.
-              </li>
-              <li>
-                Support students with disabilities by enabling them to interact
-                with computers using brain signals.
-              </li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <!-- Robotics -->
-      <section id="robotics" aria-labelledby="robotics-title">
-        <div class="container">
-          <article>
-            <h1>Where Robotics Meets Neuroscience</h1>
-            <p>
-              BCI technology can also support rehabilitation by allowing users
-              to control machines and robotic devices using brain signals.
-              Non-invasive BCI systems, such as those using
-              <a
-                href="http://kpmanalytics.com/blog/what-is-nir-spectroscopy-and-how-does-it-work"
-                class="word-link"
-                ><strong>Near-Infrared Spectroscopy (NIRS)</strong></a
-              >, can detect brain activity without requiring surgery. <br />
-              This technology has been explored to help physically disabled
-              individuals control robotic arms and assistive devices, improving
-              independence and rehabilitation opportunities. [3]
-            </p>
-            <figure class="video-container">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/5XivizSi44g?si=4uB1jinnj-lKOSZy"
-                title="Man Who is Paralyzed Uses AI-Driven Brain Implant to Control Robotic Arm"
-                allowfullscreen
-                style="
-                  width: 80%;
-                  height: 500px;
-                  border: none;
-                  border-radius: 20px;
-                "
-                loading="lazy"
-              >
-              </iframe>
-
-              <figcaption class="fst-italic small">
-                Video 2: Man Who is Paralyzed Uses AI-Driven Brain Implant to
-                Control Robotic Arm
-              </figcaption>
-            </figure>
-          </article>
-        </div>
-      </section>
-
-      <!-- Military -->
-      <section id="military" aria-labelledby="military-title">
-        <div class="container">
-          <article>
-            <h1>Where Military Meets Neuroscience</h1>
-
-            <h3>How BCIs Could Transform Military Operations [4]</h3>
-
-            <ul>
-              <li>
-                <strong>Human-Machine Interaction:</strong>
-                BCIs could allow soldiers to communicate directly with machines
-                and improve cooperation between humans and technology.
-              </li>
-
-              <li>
-                <strong>Drone and System Control:</strong>
-                BCIs may help operators control unmanned systems and military
-                equipment using brain signals.
-              </li>
-
-              <li>
-                <strong>Improved Decision-Making:</strong>
-                BCIs could monitor cognitive workload and support faster
-                decision-making in complex environments.
-              </li>
-
-              <li>
-                <strong>Enhanced Communication:</strong>
-                Future BCI systems may provide new ways for soldiers to exchange
-                information quickly.
-              </li>
-
-              <li>
-                <strong>Support for Injured Soldiers:</strong>
-                BCI technology can assist with advanced prosthetics and
-                rehabilitation for military personnel who have lost physical
-                abilities.
-              </li>
-            </ul>
-
-            <a
-              href="assets/doc/RAND_RR2996_compressed (1).pdf "
-              download
-              class="btn btn-primary"
-            >
-              Download U.S. Military Applications and Implications, An Initial
-              Assessment, BCI Report (PDF)
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <!-- End of Content -->
-      <!-- References -->
-      <section class="references container mt-5 mb-5">
-        <h4>References</h4>
-
-        <ol class="ieee-reference">
-          <li>
-            “Brain-computer interface technology is enabling children with
-            physical disabilities to play video games with their minds,” News,
-            May 21, 2026."
-            <a
-              href="https://ucalgary.ca/news/brain-computer-interface-technology-enabling-children-physical-disabilities-play-video-games-their"
-              rel="noopener noreferrer"
-              >https://ucalgary.ca/news/brain-computer-interface-technology-enabling-children-physical-disabilities-play-video-games-their
-            </a>
-          </li>
-
-          <li>
-            Y. An and S. W. Su, “Brain-Computer Interface driven BOPPPS:
-            Empirical evidence for enhanced educational practices,” Computers
-            &amp; Education, vol. 244, p. 105550, Dec. 2025, doi:
-            10.1016/j.compedu.2025.105550.
-          </li>
-
-          <li>
-            T. Nagaoka et al., “Brain-Computer Interface Using Near-Infrared
-            Spectroscopy for Rehabilitation,” Infrared Spectroscopy - Life and
-            Biomedical Sciences, pp. 339-342, 2010. Available:
-            https://www.researchgate.net/publication/224830924_Brain-Computer_Interface_Using_Near-Infrared_Spectroscopy_for_Rehabilitation
-          </li>
-
-          <li>
-            R. T. Marler, A. L. Binnendijk, and bartels, “Brain-Computer
-            Interfaces: U.S. Tactical Military Applications and Implications,”
-            ResearchGate, June 16, 2020.
-            https://www.researchgate.net/publication/342184562_Brain-Computer_Interfaces_US_Tactical_Military_Applications_and_Implications
-            (accessed July 11, 2026).
-          </li>
-        </ol>
-      </section>
+          </div>
+          
+         
     </main>
     <!-- Contact/Feedback Section -->
     <section id="feedback" class="contact-section py-5">
@@ -736,6 +649,8 @@
             <i class="bi bi-youtube"></i>
           </a>
         </div>
+        
+          
         <!-- Valid Css -->
         <div>
           <p>
@@ -751,15 +666,16 @@
         <p>
           This website was developed as part of the
           <strong>WAT2143C - Secure Frontend Application</strong>
-          as part of the
+          module for the <br />
           <a
             href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/"
             rel="noopener noreferrer"
           >
             BSc (Hons) Cyber Security
           </a>
-          programme at the University of Technology, Mauritius.
+          degree at the University of Technology, Mauritius.
         </p>
+
 
         <p class="small mb-1">© 2026 BCI Quest. All rights reserved.</p>
       </div>

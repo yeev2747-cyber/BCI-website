@@ -992,3 +992,22 @@ details[open] .fact-title::after {
 }
 
 /* Innovations */
+
+/* Ethics */
+.question-card{
+    border:2px solid var(--deep-purple);
+    border-radius:16px;
+}
+
+.question-card .card-header{
+    background:var(--deep-purple);
+    color: var(--ice-white);
+    font-weight:700;
+    border-bottom:none;
+}
+
+.question-card .card-title{
+    color:var(--deep-purple);
+    font-weight:700;
+}
+

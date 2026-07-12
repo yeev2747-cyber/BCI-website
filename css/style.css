@@ -1054,3 +1054,24 @@ details[open] .fact-title::after {
     font-weight:700;
 }
 
+/* Table responsive */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  min-width: 650px;
+}
+
+@media (max-width: 576px) {
+  .table {
+    font-size: 0.85rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+    white-space: nowrap;
+  }
+}

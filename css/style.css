@@ -1017,8 +1017,3 @@ table {
   }
 }
 
-@media (max-width: 576px) {
-  .video-container {
-    width: 100%;
-  }
-}

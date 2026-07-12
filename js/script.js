@@ -70,6 +70,33 @@ document.querySelectorAll('.modal').forEach(modal => {
 
 });
 
+// Figure alert
+function showEcogImage() {
+
+    document.getElementById("ecog-figure").style.display = "block";
+
+    document.getElementById("ecog-warning").style.display = "none";
+
+}
+
+
+
+function skipEcogImage() {
+
+    document.getElementById("ecog-figure").style.display = "none";
+
+    document.getElementById("ecog-warning").innerHTML =
+    "<strong>Figure skipped.</strong>";
+
+}
+
+
+
+function hideEcogImage() {
+
+    document.getElementById("ecog-figure").style.display = "none";
+
+}
 
 // HTML Injection / XSS Protection
 

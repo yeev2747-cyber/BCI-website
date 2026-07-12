@@ -799,17 +799,64 @@ methods such as <abbr title="Electroencephalography">EEG</abbr>, while avoiding
 deeper brain tissue penetration associated with fully invasive implants.[3]
 </p>
 
- <figure class="text-center mb-5 figure-container w-70">
+ 
+<!-- Medical Image Warning -->
+
+<div class="alert alert-warning my-4" id="ecog-warning" role="alert">
+
+    <strong>Medical Image Warning:</strong>
+    The following figure shows electrode placement on the brain during a
+    medical procedure. Some users may find this image sensitive.
+
+    <div class="mt-3">
+
+        <button class="btn btn-primary btn-sm me-2" onclick="showEcogImage()">
+            View Figure
+        </button>
+
+        <button class="btn btn-secondary btn-sm" onclick="skipEcogImage()">
+            Skip Figure
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- Figure (Hidden Initially) -->
+
+<figure 
+    class="text-center mb-5 figure-container w-70"
+    id="ecog-figure"
+    style="display:none;"
+>
+
     <img
         src="assets/image/ECoGPlacement.webp"
-        alt="ECoG Placement"
+        alt="ECoG electrode placement showing electrodes positioned on the cerebral cortex"
         class="img-fluid rounded shadow figure-image"
     />
 
+
     <figcaption class="mt-3 fst-italic small text-muted">
-        <strong>Figure 4.</strong> ECoG electrode placement on the brain surface. The electrode grid is positioned on the 
-        cerebral cortex during clinical monitoring to record neural activity and assist with identifying functional brain regions before surgery. [4]
+
+        <strong>Figure 4.</strong>
+        ECoG electrode placement on the brain surface.
+        The electrode grid is positioned on the cerebral cortex during clinical
+        monitoring to record neural activity and assist with identifying
+        functional brain regions before surgery. [4]
+
     </figcaption>
+
+
+    <button class="btn btn-secondary btn-sm mt-3" onclick="hideEcogImage()">
+        Hide Figure
+    </button>
+
+
+</figure>
+
 </section>
 
 
